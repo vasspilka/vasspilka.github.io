@@ -1,29 +1,66 @@
 <header class="header">
+  <div class="wrap">
+    <div class="head-text">
+        <h1 class="tagline">I'm <span id="typed"></span></h1>
+        <h4 class="sub-tagline">web developer / designer / geek</h4>
+    </div>
+  <ul class="main-nav">
+      <li class="_nav-demos">
+          <a href="/blog/">
+              <span class="icon" aria-hidden="true" data-icon="&#xe600;"></span>
+              <span class="label">Blog</span>
+          </a>
+      </li>
 
-  <div class="wrapper">
+      <li class="_nav-posts">
+          <a href="/project/">
+              <span class="icon" aria-hidden="true" data-icon="&#xe604;"></span>
+              <span class="label">Projects</span>
+          </a>
+      </li>
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-      <img class="my-face" src="assets/img/self.jpg">
+      <li class="_nav-me">
+          <a href="/about/">
+              <span class="icon" aria-hidden="true" data-icon="&#xe602;"></span>
+              <span class="label">About Me</span>
+          </a>
+      </li>
+  </ul>
+  <div class="divider"></div>
+  <ul class="main-nav sub-nav">
+      <li>
+          <a href="http://www.twitter.com/vasspilka">
+              <span class="icon" aria-hidden="true" data-icon="&#xe608;"></span>
+              <span class="label">Twitter</span>
+          </a>
+      </li>
 
- 
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+      <li>
+          <a href="http://www.github.com/vasspilka/">
+              <span class="icon" aria-hidden="true" data-icon="&#xe609;"></span>
+              <span class="label">Github</span>
+          </a>
+      </li>
+
+      <li>
+          <a href="https://plus.google.com/+VasilisSpilka">
+              <span class="icon" aria-hidden="true" data-icon="&#xe607;"></span>
+              <span class="label">Google +</span>
+          </a>
+      </li>
+      <li>
+          <a href="https://www.linkedin.com/pub/vasilis-spilka/79/18a/b16">
+              <span class="icon" aria-hidden="true" data-icon="&#xe60a;"></span>
+              <span class="label">LinkedIn</span>
+          </a>
+      </li>
+  </ul>
 
   </div>
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </header>
+<div class="badge">
+    <a href="/">
+        <img src="/assets/img/self.jpg" width="100%" height="100%" />
+    </a>
+</div>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
