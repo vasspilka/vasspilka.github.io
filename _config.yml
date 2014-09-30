@@ -9,7 +9,7 @@ twitter_username: vasspilka
 github_username:  vasspilka
 
 # Build settings
-markdown: kramdown
+markdown: rdiscount
 
 sass:
     sass_dir: assets/_sass
