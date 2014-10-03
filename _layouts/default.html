@@ -7,8 +7,8 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="container">
+      <div class="main">
         {{ content }}
       </div>
     </div>
@@ -17,4 +17,6 @@
 
   </body>
   {% include typedjs.html %}
+  {% include disqus-count.html %}
+  {% include analytics.html %}
 </html>

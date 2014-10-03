@@ -1,0 +1,11 @@
+---
+layout: tag
+title: "new"
+---
+{% for post in site.posts %}
+	{% for tag in post.tags %}
+		{% if tag == "new" %}
+			{% include teaser.html %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
