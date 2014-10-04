@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
-<div class='content'>
+<div>
     {% for post in site.posts %}
       <article class="post">
+        <header>
         <time class="post-meta" pubdate datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           {% if post.tags.size > 0 %}
@@ -13,6 +14,7 @@ layout: default
               {% endfor %}
             </ul>
           {% endif %}
+        </header>
       </article>
     {% endfor %}
 </div>

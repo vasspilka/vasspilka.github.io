@@ -4,9 +4,12 @@
 
 @charset "utf-8";
 
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600);
+@import url(http://fonts.googleapis.com/css?family=Nunito:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family:"Ubuntu Mono", "Titillium Web",Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -17,8 +20,8 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color:       #989898;
+$grey-color-light: lighten($grey-color, 35%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $on-palm:          600px;
@@ -63,13 +66,18 @@ $dashColor      : #e0e0e0;
         "reset",
         "base",
         "layout",
-        "temp",
+        "header",
         "../fonts/style",
         "syntax-highlighting",
         "aside"
 ;
 
 
+body {
+  font-family: $base-font-family;
+  font-size: 100%;
+  background-color: #fff;
+  text-shadow: #fff 0px 1px 0px; }
 
 #top-image{
     width:100%;
@@ -219,9 +227,9 @@ $dashColor      : #e0e0e0;
                     display: block;
                     margin: 5px 0 0 0;
                     padding: 5px;
-                    background: #fff;
-                    color: #ddd;
-                    font-size: 12px;
+                    background: $grey-color-light;
+                    color: $grey-color;
+                    font-size: 13px;
                     line-height: 12px;
                     @include radius(8px);
                     @include transition(color .3s ease-in);

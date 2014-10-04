@@ -1,32 +1,14 @@
 /* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
 /*@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700);*/
 
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,900);
-
-body {
-  font-family: "Titillium+Web", sans-serif;
-  font-size: 100%;
-  background-color: #f8f8f8;
-  text-shadow: #fff 0px 1px 0px; }
+//
+// Styles here copied from http://www.mattboldt.com/ credits to Matt!!!
+//
 
 .wrap {
   max-width: 900px;
   margin: auto;
   padding: 0 20px; }
-
-.inner-wrap {
-  max-width: 800px;
-  margin: auto;
-  padding: 0 20px; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-.clear {
-  clear: both; }
 
 .nav {
   /* overflow: hidden; */ }
@@ -35,13 +17,6 @@ body {
   display: inline-block;
   margin-left: -0.32em;
   /*float: left;*/ }
-
-/* pushes the first li back in place */
-.nav li:first-child {
-  margin-left: 0; }
-
-.nav li a {
-  display: block; }
 
 @media screen and (max-width: 550px) {
   p {

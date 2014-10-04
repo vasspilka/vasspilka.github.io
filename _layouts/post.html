@@ -12,7 +12,7 @@ layout: default
 <div class="content">
 	<article class="post{% if page.image %} image-post{% endif %}">
 		<header>
-			<time class="post-date" pubdate datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+          <time class="post-meta" pubdate datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
 			{% if page.tags.size > 0 %}
 				<ul class="post-tags">
 					{% for tag in page.tags %}
@@ -29,6 +29,6 @@ layout: default
 			{{ content }}
 		</div>
 	</article>
-	{% include disqus.html %}
 </div>
 {% include aside.html %}
+{% include disqus.html %}

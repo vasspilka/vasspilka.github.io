@@ -2,11 +2,11 @@
 	h1 {
 		font-size: 1;
 		line-height: 1;
-		margin-bottom: 5em;
-		color: #bbb;
+		margin-bottom: 1em;
+		color: $grey-color;
 		@include transition(color .3s ease-in);
 		a {
-			color: #bbb;
+			color: $grey-color;
 		}
 	}
 	.tags {
@@ -21,7 +21,7 @@
 			li,
 			a {
 				display: block;
-				color: #bbb;
+				color: $grey-color;
 				border-bottom: 1px solid transparent;
 				@include transition(all .3s ease-in);
 
