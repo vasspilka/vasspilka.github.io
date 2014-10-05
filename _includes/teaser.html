@@ -7,6 +7,6 @@
 			<time pubdate datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time>
 			<h1>{{ post.title }}</h1>
 		</header>
-		<p>{{ post.content | strip_html | truncatewords: 50, '&hellip;' }}</p>
 	</a>
+		<p>{{ post.content | strip_html | truncatewords: 50, '&hellip;' }}</p>
 </article>
