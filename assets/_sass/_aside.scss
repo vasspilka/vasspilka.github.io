@@ -1,9 +1,9 @@
 .aside {
 	h1 {
+		color: $grey-color;
 		font-size: 1;
 		line-height: 1;
 		margin-bottom: 1em;
-		color: $grey-color;
 		@include transition(color .3s ease-in);
 		a {
 			color: $grey-color;
@@ -32,7 +32,7 @@
 				}
 				span {
 				    margin-left: 5px;
-				    color: $dashColor;
+				    color: $grey-color-light;
 				}
 			}
 		}

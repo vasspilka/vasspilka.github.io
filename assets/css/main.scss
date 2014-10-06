@@ -10,7 +10,8 @@
 //@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 // Our variables
-$base-font-family:"Source Sans pro", sans-serif,Helvetica, Arial;
+$base-font-family: "Source Sans pro", sans-serif,Helvetica, Arial;
+$code-font-family: "Ubuntu Mono";
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -21,8 +22,8 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #989898;
-$grey-color-light: lighten($grey-color, 35%);
+$grey-color:       #666;
+$grey-color-light: lighten($grey-color, 30%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $on-palm:          600px;
@@ -44,7 +45,7 @@ $accentColor    : lighten(#1c525c, 25%);
 $dashColor      : #e0e0e0;
 
 code {
-    font-family: "Ubuntu Mono";
+    font-family: $code-font-family;
 }
 
 
@@ -139,7 +140,7 @@ body {
 }
 
 
-// Cursor for typed.js 
+// Cursor for typed.js
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -160,150 +161,4 @@ body {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
-}
-
-// Post
-.post-navigation {
-    .previous,
-    .next {
-        position: fixed;
-        width: 40px;
-        height: 40px;
-        top: 50%;
-        margin-top: -(40px / 2);
-        line-height: 40px;
-        text-align: center;
-        color: #ddd;
-        font-size: 2em;
-        &:hover {
-            text-decoration: none;
-            background: #fff url("../img/stripe-bg.png");
-            color: $accentColor;
-        }
-    }
-    .previous {
-        left: 0;
-        @include radius(0 5px 5px 0);
-    }
-    .next {
-        right: 0;
-        width: 40px + 10px; // Accomodate for scroll
-        @include radius(5px 0 0 5px);
-    }
-}
-.post {
-    margin: 20px 0;
-
-    header {
-        position: relative;
-        border-top: 1px dashed $dashColor;
-
-        .github-fork {
-            position: absolute;
-            top: 32px;
-            right: 0;
-            display: inline-block;
-            border: 0;
-        }
-
-        .post-date {
-            display: block;
-            width: 108px;
-            margin: -1px 0 10px -20px;
-            padding-left: 10px;
-            font-weight: bold;
-            line-height: 32px;
-            color: $grey-color;
-            @include radius(2px);
-            @include transition(width margin .3s ease-in);
-        }
-        .post-tags {
-            position: absolute;
-            top: 0;
-            right: 5px;
-            list-style: none;
-            li {
-                display: inline-block;
-                a {
-                    display: block;
-                    margin: 5px 0 0 0;
-                    padding: 5px;
-                    background: $grey-color-light;
-                    color: $grey-color;
-                    font-size: 13px;
-                    line-height: 12px;
-                    @include radius(8px);
-                    @include transition(color .3s ease-in);
-
-                    &:hover {
-                        color: $accentColor;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
-    .body {
-        padding: 0 20px 0 0;
-        max-width: 600px;
-    }
-    footer {
-        @include clearfix();
-        margin: 10px 0;
-
-        .comments-link {
-            float: right;
-            border-right: 0;
-        }
-    }
-    &.image-post {
-        header {
-            border-top: 0;
-
-            .post-image {
-                display: block;
-                margin: -1px 0 10px 0;
-            }
-            .post-date {
-                margin-top: 0;
-                margin-bottom: 0;
-                width: auto;
-            }
-        }
-    }
-    .actions {
-        margin: 10px 0;
-    }
-}
-
-
-
-// Base
-
-.container {
-    margin: 0 auto;
-    @include gridWidth($columns);
-    @include transition(all .3s ease-in);
-}
-
-.main {
-    @include row();
-    @include transition(all .3s ease-in);
-}
-
-.content {
-    @include gridColumn($columns - $asideColumns, -1px);
-    @include transition(all .3s ease-in);
-}
-.content-wide {
-    position: relative;
-    @include gridColumn($columns);
-    @include transition(all .3s ease-in);
-}
-
-.aside {
-    @include gridColumn($asideColumns);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    min-height: 300px;
 }
