@@ -2,14 +2,15 @@
     $(function(){
 
         $("#typed").typed({
-            strings: ["I am a starting web-developer...^700", "and designer.^300", "I love the web and the freedom it provides!!^1000","Owww!!...^400 by the way^300","I am Vasilis(Billy) Spilka"],
+            strings: ["Hello!^300","I am Billy Spilka"],
             typeSpeed: 35,
             backDelay: 500,
             loop: false,
             // defaults to false for infinite loop
             loopCount: false,
-            callback: function(){ foo(); },
-            resetCallback: function() { newTyped(); }
+            callback: function(){
+            lift();
+            }
         });
 
         $(".reset").click(function(){
@@ -18,7 +19,7 @@
 
     });
 
-    function newTyped(){ /* A new typed object */ }
-
-    function foo(){ console.log("Callback"); }
+    function lift(){
+        $(".head-text").addClass("lift-text");
+    }
 </script>
