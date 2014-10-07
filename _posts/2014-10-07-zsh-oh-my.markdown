@@ -1,0 +1,81 @@
+---
+layout: post
+title: "Zsh... oh my"
+date: "2014-10-07"
+tags: zsh bash terminal linux
+---
+
+When I first started using Linux, I wondered if there is a way to improve the terminal
+experience. Z shell or otherwise known as Zsh was among the first things I stumbled upon.
+
+## What is Zsh?
+
+Zsh is a shell (The language we use in a terminal), you may be familiar with bash
+witch is the default for most linux distros including Ubuntu. Zsh is also available
+for Mac and Windows(if you are up for the chalenge).
+
+## Why zsh?? We already got bash...
+
+Well there are quite a few of reason why zsh is AWSOME! But lets get started with these
+
+  * Convenience
+  * Community
+  * Customization
+  * Aesthetics
+
+### Convenience
+
+What if when you wanted to access a directory all you had to do is write it,
+Without having to press `cd ` every time.<br>
+What if you didn't even have to write the whole directory?<br />
+What if you could just write `$ Dow` hit `Tab` , `Enter` and find yourself in the
+`Downloads` directory.<br>
+What if you could write `$ Do/M/Bob` hit `Tab` and the could switch between the
+`Downloads/Music/Bob Marley` or `Downloads/Music/Bob Dylan` directory using the `Tab`
+key and `Enter`
+
+Well... zsh can do all these and a lot more!!<br>
+Hitting `Tab` will auto-complete any command if it is the only one available, otherwise
+you can chose witch one to use using `Tab` and `Enter` on the one you want.
+You can use it for auto-completing paths and almost anything else aswell.<br>
+`command --` + `Tab` can be really convenient for seeing the options of a command.
+
+Path replacement, lets say you are in `/server/www/website1/current/vendor` and want to go to
+`/server/www/website2/current/vendor`, all you need to do is `$ cd website1 website2` and you are there!
+
+Another cool thing zsh knows how to do is approximation.
+Lets say I've written `$ Downloafs/Books`, `Tab` to the rescue!! Hit it and it will fix your path!
+
+### Community
+
+There are a lot of great folks who constantly improve zsh!
+Also there are a lot of great folks who make addons and plugins.
+One of the best is [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) its a
+framework for zsh full of helpful functions, helpers, plugins, themes and more!
+Manny people use zsh just to use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)!!
+It has useful plugins for [ruby](https://www.ruby-lang.org/en/) , [git](http://git-scm.com/) and tons more!!
+I would say if you are going to use zsh use oh-my-zsh with it.
+
+One plugin I found about recently and really enjoy is
+[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
+It colors commands, but only if they exist, making it a lot less painful when you are
+about to hit `Enter` with an error in the command, also whenever a path does not exist, it
+makes it red to warn you.
+
+### Customization
+
+Ok, bash has a lot of customization, however zsh has even more! If you use bash regularly,
+you probably know about alias. With alias you can set a "sortcut" for a command by modifing a
+file `.bashrc` and putting `alias shortcut = "command /really/long/path/to/file -option1 --option2"`
+of course you would use a real command.
+
+Well... zsh has alias as well, but extended it! There is the suffix alias, by putting the following
+code to your `.zshrc` `alias -s html=chomium` zsh will open any `.html` files with chromium simply
+by referring to them like so `$ my/project/index.html`. A good way to use this is putting a terminal text
+editor for all your text file types ;) .
+
+The global alias can be also quite useful.You can make an alias you will be able to use anywhere
+in an command. You can write it like so in your `.zshrc` , `alias -g PE="--port 1337 --environment test"`.
+Now you can use it in a rails server command, `$ rails server PE --pid 54321`.
+
+### Aesthetics
