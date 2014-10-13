@@ -63,9 +63,17 @@ code {
 }
 
 
+// #wrap-0{
+//   z-index:-999;
+// }
+
+
 #pixie{
-  position:absolute;
-  float:left;
+  position:fixed;
+  right:0;
+  top:0;
+  display:inline-block;
+  z-index:0;
 }
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

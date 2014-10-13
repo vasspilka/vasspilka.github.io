@@ -19,8 +19,8 @@ for Mac and Windows(if you are up for the chalenge).
 Well there are quite a few of reason why zsh is AWSOME! But lets get started with these.
 
   * Convenience
-  * Community
   * Customization
+  * Community
 
 ### Convenience
 
@@ -39,7 +39,7 @@ you can chose witch one to use by `Tab` and `Enter` the one you want.
 You can use it for auto-completing paths and almost anything else.  
 `command --` + `Tab` can be really convenient for seeing the options of a command.
 
-Path replacement, lets say we have these 2 directories
+Path replacement, lets say we have these 2 directories  
   `/server/www/website1/current/vendor`  
   `/server/www/website2/current/vendor`  
 and want to go from the first one to the second,
@@ -67,9 +67,9 @@ Zsh has improved alias with "extentions". The suffix alias, and the global alias
 The suffix alias sets a command as default when referring to a file type.  
 The global alias sets a "shortcut" you can use anywhere in a command.
 
-So with suffix alias you can 
-
-`alias -s html=chomium` zsh will open any `.html` files with chromium simply
+To use the suffix alias you simply have to put `alias -s [suffix]=[app]` with [suffix] being
+the type of a file and [app] being the app you want to open this type of file.
+For example if you type `alias -s html=chomium` zsh will open any `.html` file with chromium
 by referring to them like so `$ my/project/index.html`. A good way to use this is putting a terminal text
 editor for all your text file types ;) .
 
@@ -77,7 +77,10 @@ The global alias can be also quite useful.You can make an alias you will be able
 in an command. You can write it like so in your `.zshrc` , `alias -g PE="--port 1337 --environment test"`.
 Now you can use it in a rails server command, `$ rails server PE --pid 54321`.
 
-Another thing you can customize is looks. With zsh you can change the way prompt looks
+Another thing you can customize is looks. With zsh you can change the way prompt looks.
+And if you installed [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) there is a lot of custom
+themes available. Zsh also offers you the possibility to have something on the right side of the promt.
+Which can be a good way to show some info you might be interested in.
 
 ### Community
 
@@ -94,3 +97,18 @@ One plugin I found about recently and really enjoy is
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
 It colors commands and paths with red to warn you when they are wrong. Making it a lot less painful when you are
 about to hit `Enter` with an error in the command. Also it uses green for existing commands.
+
+###
+
+There are a lot of thing I did not cover in here. And a lot I do not know about yet.
+
+## Summing up
+
+If you work often with the terminal learning more about your shell can save you a lot of time.
+In my opinion Zsh can be a huge improvement over bash espesially if you use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
+
+
+So what are you waiting for? Have you using Zsh? Have you tried it?  
+Do you have any other shell suggestions?
+
+If you want to share something with me don't hesitate to comment below.
