@@ -24,11 +24,11 @@ Well there are quite a few of reason why zsh is AWSOME! But lets get started wit
 
 ### Convenience
 
-What if whenever you wanted to access a directory all you had to do is write it,
+What if whenever you wanted to access a directory all you had to do is write it down,
 Without having to press `cd ` every time.  
-What if you didn't even have to write the whole directory?  
-What if you could just write `$ Dow` hit `Tab` , `Enter` and find yourself in the
-`Downloads` directory.  
+What if you didn't even have to write the whole directory? <!-- imagine -->
+What if you could just write `$ Dow` hit `Tab` , `Enter`  
+and find yourself in the `Downloads` directory.  
 What if you could write `$ Do/M/Bob` hit `Tab` and switch between the
 `Downloads/Music/Bob Marley` and `Downloads/Music/Bob Dylan` directories simply by
 using the `Tab` key and `Enter`
@@ -68,7 +68,7 @@ The suffix alias sets a command as default when referring to a file type.
 The global alias sets a "shortcut" you can use anywhere in a command.
 
 To use the suffix alias you simply have to put `alias -s [suffix]=[app]` with [suffix] being
-the type of a file and [app] being the app you want to open this type of file.
+a file type and [app] being the app you want to open it with.  
 For example if you type `alias -s html=chomium` zsh will open any `.html` file with chromium
 by referring to them like so `$ my/project/index.html`. A good way to use this is putting a terminal text
 editor for all your text file types ;) .
