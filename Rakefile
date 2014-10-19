@@ -9,7 +9,7 @@ include Term::ANSIColor
 include WEBrick
 
 task :default => :develop
- 
+
 desc 'Build site with Jekyll.'
 task :build => :tags do
 	printHeader "Compiling website..."
@@ -17,7 +17,7 @@ task :build => :tags do
 	@site = Jekyll::Site.new(options)
 	@site.process
 end
- 
+
 def globs(source)
   Dir.chdir(source) do
     dirs = Dir['*'].select { |x| File.directory?(x) }
@@ -49,10 +49,10 @@ task :develop => :build do
   trap("INT") { server.shutdown }
   printHeader "Development server started at http://localhost:4000/"
   printHeader "Opening website in default web browser..."
-  
+
   ##
-  #%x[open http://localhost:4000/]
-  #%x[subl ./]
+  #%x[firefox http://localhost:4000/]
+  %x[atom ./]
   printHeader "Development mode entered."
   thread.join()
 end
@@ -62,6 +62,7 @@ task :clean do
   printHeader "Cleaning build directory..."
   %x[rm -rf _site]
 end
+
 
 task :new do
   title = ask("Title: ")
@@ -152,69 +153,69 @@ end
 
 # less to scss based on http://stackoverflow.com/a/19167099/2363935
 namespace :convert do
- 
+
   task :less_to_scss do
- 
+
     source_glob = "../leon.github.com/assets/css/*.less"
     dest_dir = "converted"
- 
+
     rm_r dest_dir rescue nil
     mkdir_p(dest_dir)
- 
+
     file_map = {}
- 
+
     # copy the files
     Dir.glob(source_glob).each do |source_file|
       # puts "\tWorking on #{source_file}"
       basename = File.basename(source_file, '.less')
       dest_filename = "_#{basename}.scss"
       dest_file = File.join(dest_dir, dest_filename)
- 
+
       # track the file mapping for a replace later
       file_map["#{basename}.less"] = dest_filename
- 
+
       cp source_file, dest_file
       # convert_file(source_file, dest_file)
     end
- 
+
     # do the conversion
     Dir.glob("#{dest_dir}/*.scss").each do |file_name|
- 
+
       puts "Converting #{file_name}"
       text = File.read(file_name)
- 
+
       # http://stackoverflow.com/a/19167099/2363935
- 
+
       # 1. replace @ with $
       text = text.gsub(/@(?!import|media|keyframes|-)/, '$')
- 
+
       # 2. replace mixins
       text = text.gsub(/\.([\w\-]*)\s*\((.*)\)\s*\{/, '@mixin \1(\2){')
- 
+
       # 3. replace includes
       text = text.gsub(/\.([\w\-]*\s*;)/, '@include \1')
       # text = text.gsub(/\.([\w\-]*\(.*\)\s*;)/, '@include \1')
       # text = text.gsub(/\.\([a-z0-9-]\+/, '@include \1(/')
- 
+
       # 3. a) replace no param mixin includes with empty parens
       text = text.gsub(/@include\ ([\w\-]*\s*;)/, '@include \1()')
       # 3. b) I'm terrible with regex, 3a makes a ';()', so fix it
       text = text.gsub(/;\(\)/, '();')
- 
+
       # 4. replace string literals
       text = text.gsub(/~"(.*)"/, '#{"\1"}')
- 
+
       # 5. replace spin to adjust-hue (function name diff)
       text = text.gsub(/spin/, 'adjust-hue')
- 
+
       # 6. replace all the file maps
       file_map.each do |less, scss|
         text = text.gsub(less, scss)
       end
- 
- 
+
+
       File.open(file_name, 'w') { |file| file.puts text }
     end
- 
+
   end
 end

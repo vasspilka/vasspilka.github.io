@@ -37,7 +37,9 @@ body {
 // Base
 
 .container {
+    position:relative;
     margin: 0 auto;
+    z-index: 100;
     @include gridWidth($columns);
     @include transition(all .3s ease-in);
 }

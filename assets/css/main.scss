@@ -69,12 +69,13 @@ code {
 
 
 #pixie{
-  position:fixed;
+  position:absolute;
   right:0;
   top:0;
   display:inline-block;
   z-index:0;
 }
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixin",
