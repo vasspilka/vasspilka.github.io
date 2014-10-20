@@ -1,4 +1,8 @@
 .aside {
+	@include gridColumn($asideColumns);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 300px;
 	h1 {
 		color: $grey-color;
 		font-size: 1;

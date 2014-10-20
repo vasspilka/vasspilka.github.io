@@ -38,18 +38,13 @@ only screen and (min-resolution: 2dppx) {
 .header {
   width: 100%;
   //background: url("/assets/img/2.jpg") top center no-repeat fixed;
-  background-color: #222933;
+  background-color: $background-color;
   text-align: center;
   padding-bottom: 20px;
   background-size: 100%;
 }
-@media screen and (max-width: 1300px) {
-  .header {
-    background-size: auto;
-  }
-}
 .head-text {
-  padding: 80px 0 0;
+  padding: 0px 0 0;
   min-height: 215px;
   color: #fff;
   font-size: 2em;
@@ -89,7 +84,7 @@ only screen and (min-resolution: 2dppx) {
   position: relative;
   width: 100px;
   height: 100px;
-  margin: -40px auto 20px;
+  margin: auto;
   padding: 0;
   border-radius: 100%;
   border: #3a4450 4px solid;
@@ -115,6 +110,12 @@ only screen and (min-resolution: 2dppx) {
   -ms-animation: blink 1s infinite;
   -o-animation: blink 1s infinite;
   animation: blink 1s infinite;
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    background-size: auto;
+  }
 }
 @media screen and (max-width: 800px) {
   .head-text {
@@ -224,7 +225,7 @@ only screen and (min-resolution: 2dppx) {
   font-size: 2.25em;
   text-decoration: none;
   text-shadow: none;
-  border-radius: 3px;
+  border-radius: 5px;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;

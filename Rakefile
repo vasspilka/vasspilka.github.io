@@ -48,7 +48,7 @@ task :develop => :build do
   thread = Thread.new { server.start }
   trap("INT") { server.shutdown }
   printHeader "Development server started at http://localhost:4000/"
-  printHeader "Opening website in default web browser..."
+  printHeader "Opening Atom text editor..."
 
   ##
   #%x[firefox http://localhost:4000/]

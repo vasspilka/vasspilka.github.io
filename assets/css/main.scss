@@ -1,6 +1,8 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+// Special thanks to Leon Radley (http://leon.radley.se/) and Matt Bolt (http://www.mattboldt.com)
+
 
 @charset "utf-8";
 
@@ -19,7 +21,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #222933;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #666;
@@ -27,7 +29,7 @@ $grey-color-light: lighten($grey-color, 30%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        820px;
 
 // Grid
 $columnWidth: 40px;
@@ -69,7 +71,7 @@ code {
 
 
 #pixie{
-  position:absolute;
+  position:fixed;
   right:0;
   top:0;
   display:inline-block;
@@ -88,12 +90,6 @@ code {
         "aside"
 ;
 
-
-body {
-  font-family: $base-font-family;
-  font-size: 100%;
-  background-color: #fff;
-  text-shadow: #fff 0px 1px 0px; }
 
 #top-image{
     width:100%;
@@ -144,33 +140,4 @@ body {
             }
         }
     }
-}
-
-
-.my-face{
-    border-radius: 500px;
-}
-
-
-// Cursor for typed.js
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
 }
