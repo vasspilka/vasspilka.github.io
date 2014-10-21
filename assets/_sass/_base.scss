@@ -1,92 +1,16 @@
 /**
  * Reset some basic elements
  */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-hr,
-dl,
-dd,
-ol,
-ul,
-figure {
+body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,dl,dd,ol,ul,figure {
   margin: 0;
   padding: 0;
 
-}
-/**
- * Basic styling
- */
-body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  text-shadow: #fff 0px 1px 0px;
-  font-weight: 300;
-  color: $text-color;
-  background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-
-}
-// Base
-
-.container {
-    background-color: white;
-    border-radius: 21px;
-    position:relative;
-    margin: 0 auto;
-    // padding:40px;
-    z-index: 100;
-    @include gridWidth($columns);
-    @include transition(all .3s ease-in);
-    // width:80%;
-}
-
-.main {
-    @include row();
-    @include transition(all .3s ease-in);
-}
-
-.content {
-    @include gridColumn($columns - $asideColumns, -1px);
-    @include transition(all .3s ease-in);
-}
-.content-wide {
-    position: relative;
-    @include gridColumn($columns);
-    @include transition(all .3s ease-in);
-}
-
-.aside {
-    @include gridColumn($asideColumns);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    min-height: 300px;
 }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-ul,
-ol,
-dl,
-figure,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,ul,ol,dl,figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 
@@ -125,12 +49,6 @@ li {
   }
 
 }
-/**
- * Headings
- * h1, h2, h3, h4, h5, h6 {
- *     font-weight: 300;
- * }
- */
 
 /**
  * Links
@@ -175,35 +93,7 @@ pre {
   }
 
 }
-/**
- * Wrapper
- */
-// .wrapper {
-//   max-width: calc(800px - (#{$spacing-unit} * 2));
-//   margin-right: auto;
-//   margin-left: auto;
-//   padding-right: $spacing-unit;
-//   padding-left: $spacing-unit;
-//   @extend %clearfix;
-//   @include media-query($on-laptop) {
-//     max-width: calc(800px - (#{$spacing-unit}));
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-//
-// }
-/**
- * Clearfix
- */
-%clearfix {
 
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-}
 /**
  * Icons
  */
@@ -220,6 +110,9 @@ pre {
     }
   }
 }
+
+
+
 // Post
 .post-navigation {
     .previous,
@@ -252,18 +145,9 @@ pre {
 }
 .post {
     margin: 20px 0;
-
     header {
         position: relative;
         border-top: 1px dashed $dashColor;
-
-        .github-fork {
-            position: absolute;
-            top: 32px;
-            right: 0;
-            display: inline-block;
-            border: 0;
-        }
 
         .post-date {
             display: block;
@@ -314,55 +198,4 @@ pre {
             padding: 5px 15px;
         }
     }
-    &.image-post {
-        header {
-            border-top: 0;
-
-            .post-image {
-                display: block;
-                margin: -1px 0 10px 0;
-            }
-            .post-date {
-                margin-top: 0;
-                margin-bottom: 0;
-                width: auto;
-            }
-        }
-
-    }
-    .actions {
-        margin: 10px 0;
-    }
-}
-
-@media screen and (max-width: 760px) {
-  .container {
-    width: 100%;
-  }
-    .main {
-      margin-left: 0;
-    }
-      .content,
-      .content-wide {
-        width: 94%;
-        margin-left: 3%;
-        border-right: 0;
-      }
-        .post header .post-date {
-          margin-left: 0;
-        }
-      .aside {
-        width: 94%;
-        margin-left: 3%;
-        padding-top: 20px;
-        border-top: 1px dashed $dashColor;
-      }
-  .footer {
-    width: 94%;
-    margin-left: 3%;
-  }
-
-  a.github-fork {
-    top: 100px;
-  }
 }

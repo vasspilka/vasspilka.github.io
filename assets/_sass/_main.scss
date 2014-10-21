@@ -1,0 +1,49 @@
+body {
+  min-width:377;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  text-shadow: #fff 0px 1px 0px;
+  font-weight: 300;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  @include outer-container(100%);
+
+}
+
+.container {
+    max-width:920px;
+    z-index:100;
+    background-color: white;
+    border-radius: 21px;
+    position:relative;
+    margin: 0 auto;
+    @include transition(all .3s ease-in);
+}
+
+.main {
+  z-index:1;
+  @include outer-container(85%);
+  @include row();
+  @include transition(all .3s ease-in);
+}
+
+.content {
+  margin-top:50px;
+  @include span-columns(8);
+  @include transition(all .3s ease-in);
+}
+
+.aside {
+    @include span-columns(3);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    min-height: 300px;
+}
+
+.site-footer{
+  background-color:white;
+  margin-top:50px;
+  text-align:center;
+}

@@ -80,6 +80,9 @@ code {
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "bourbon/bourbon",
+        "neat/neat",
+        "base/base",
         "mixin",
         "reset",
         "base",
@@ -87,7 +90,8 @@ code {
         "header",
         "../fonts/style",
         "syntax-highlighting",
-        "aside"
+        "aside",
+        "main"
 ;
 
 

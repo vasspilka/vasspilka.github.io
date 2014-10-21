@@ -10,6 +10,8 @@ gem "jekyll", versions['jekyll']
 
 
 # Gems for developement
+gem 'bourbon'
+gem 'neat'
 gem 'rake'
 gem 'iconv'
 gem 'term-ansicolor'
