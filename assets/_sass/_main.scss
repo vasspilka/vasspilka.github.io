@@ -44,7 +44,13 @@ body {
 }
 
 .site-footer{
+  max-width:920px;
+  border-radius:21px;
   background-color:white;
-  margin-top:50px;
+  margin:auto;
+  margin-top:80px;
+  margin-bottom:50px;
   text-align:center;
+  @include row();
+  @include transition(all .3s ease-in);
 }
