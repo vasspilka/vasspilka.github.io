@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using Jekyll with Rake"
-date: "2014-10-07"
+date: "2014-10-27"
 tags: rake ruby jekyll
 ---
 
@@ -41,7 +41,9 @@ The code was written by Leon Bradley so I claim no copywrite.
 
 First lets see the whole code.
 
+
 {% highlight ruby %}
+{% raw %}
 desc 'Generate tags pages'
 task :tags => :tag_cloud do
   puts "Generating tags..."
@@ -101,4 +103,5 @@ task :tag_cloud do
   end
   puts 'Done.'
 end
+{% endraw %}
 {% endhighlight %}

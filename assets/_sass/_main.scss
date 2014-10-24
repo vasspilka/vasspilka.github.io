@@ -24,6 +24,7 @@ body {
 
 .main {
   z-index:1;
+  padding:30px 0;
   @include outer-container(85%);
   @include row();
   @include transition(all .3s ease-in);

@@ -1,10 +1,10 @@
 <header class="header">
+  <div class="wrap">
   <div class="badge">
       <a href="/">
           <img src="/assets/img/self.jpg" width="100%" height="100%" />
       </a>
   </div>
-  <div class="wrap">
     <div class="head-text">
         <h1 class="tagline"><span id="typed"></span></h1>
         <h4 class="sub-tagline">Junior web developer / designer</h4>
@@ -56,7 +56,10 @@
           </a>
       </li>
       <li>
-        <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><span class="icon" aria-hidden="true" data-icon="&#xe606;"></span><span class="label">RSS Feed</span></a>
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+          <span class="icon" aria-hidden="true" data-icon="&#xe606;"></span>
+          <span class="label">RSS Feed</span>
+        </a>
       </li>
   </ul>
   </div>

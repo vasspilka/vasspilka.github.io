@@ -5,7 +5,7 @@ date: "2014-10-07"
 tags: zsh bash terminal linux
 ---
 
-When I first started using Linux, I wondered if there is a way to improve the terminal
+When I first started using Gnu/Linux, I wondered if there is a way to improve the terminal
 experience. Z shell or otherwise known as Zsh was among the first things I stumbled upon.
 
 ## What is Zsh?
