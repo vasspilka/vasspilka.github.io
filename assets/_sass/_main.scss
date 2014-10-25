@@ -27,30 +27,49 @@ body {
   padding:30px 0;
   @include outer-container(85%);
   @include row();
+  @include clearfix();
   @include transition(all .3s ease-in);
 }
+
 
 .content {
   margin-top:50px;
-  @include span-columns(8);
+  position:relative;
   @include transition(all .3s ease-in);
+  @include media($large-screen) {
+    @include span-columns(8);
+    @include omega(3n);
+  }
 }
 
 .aside {
+  margin-top: 50px;
+  position:relative;
+  margin-bottom: 20px;
+  min-height: 300px;
+  @include media($large-screen) {
     @include span-columns(3);
-    margin-top: 50px;
-    margin-bottom: 20px;
-    min-height: 300px;
+    @include omega(3n);
+  }
 }
 
 .site-footer{
   max-width:920px;
+  height:50px;
+  padding:0;
   border-radius:21px;
   background-color:white;
   margin:auto;
   margin-top:80px;
-  margin-bottom:50px;
-  text-align:center;
-  @include row();
+  margin-bottom:30px;
   @include transition(all .3s ease-in);
+  div{
+    text-align:center;
+  }
+  div:before {/*add a pseudo element*/
+    content:"";
+    display:block;
+    height:50%;
+    margin-top:0.75em ;/*half of the font size*/
+  }
 }
