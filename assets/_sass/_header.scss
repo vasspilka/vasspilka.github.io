@@ -211,7 +211,7 @@ only screen and (min-resolution: 2dppx) {
   font-size: 2.25em;
   text-shadow: none;
   border-radius: 5px;
-  @include transition(all .3s ease-in);
+  @include transition(all .2s ease-in);
 }
 .main-nav a:hover {
   color: #333;
