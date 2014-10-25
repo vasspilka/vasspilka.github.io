@@ -6,21 +6,23 @@
   <a class="previous" href="{{ page.previous.url }}" title="{{ page.previous.title }}">⇤</a> {% endif %} {% if page.next %}
   <a class="next" href="{{ page.next.url }}" title="{{ page.next.title }}">⇥</a> {% endif %}
 </nav>
-<div class="content">
-  <article class="post{% if page.image %} image-post{% endif %}">
+  <article class="post">
     <header>
       <time class="post-date" pubdate datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-      {% if page.image %}
-        <img class="post-image" src="{{ page.image }}" alt="{{ page.title }}" />
+      {% if page.tags.size > 0 %}
+      <ul class="post-tags">
+        {% for tag in page.tags %}
+        <li><a href="/tag/{{ tag }}/">{{ tag }}</a>
+        </li>
+        {% endfor %}
+      </ul>
       {% endif %}
       <h1>{{ page.title }}</h1>
     </header>
-    <div class="body">
+    <div>
       {{ content }}
     </div>
   </article>
   <div id="comments">
     {% include disqus.html %}
   </div>
-</div>
-{% include aside.html %}
