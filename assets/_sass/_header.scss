@@ -105,7 +105,9 @@ only screen and (min-resolution: 2dppx) {
 .typed-cursor {
   font-weight: 100;
   padding: 0 2px;
-  @include transition(blink 1s infinite);
+  animation:blink 1s infinite;
+  -webkit-transition:blink 1s infinite;
+  -webkit-animation:blink 1s infinite;
 }
 
 @media screen and (max-width: 1300px) {
