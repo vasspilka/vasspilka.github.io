@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Jekyll with Rake"
+title: "Semi dynamic website with Jekyll and Rake"
 date: "2014-10-27"
 tags: rake ruby jekyll
 ---
@@ -18,28 +18,35 @@ Ready to be deployed anywhere.
 GitHub pages supports Jekyll that means you can easily upload your Jekyll site to a repository
 and GitHub will host it for you.
 
-However Jekyll lacks some functionality, like what if you want to include tags in your posts,
-Or what if you want
-This is where Rake comes to play.
-If
+However Jekyll lacks some functionality, since it compiles to a static website,
+you can not use Ruby for controllers, routers and models. And that poses a problem
+if you want some dynamic functionality in your website.
 
 ### Rake
 
 Rake is a Make implementation in Ruby. What it actually is, is a tasks manager,
 you tell Rake what you want to do and how, and it will do it for you, whenever you
 ask. That can be extremely usefull when you want to automate certain tasks for your
-website (or any tasks that is).
+webapp (or any tasks that is).
 
-Rake knows how to use shell commands and (ofcourse) knows ruby. Lets see what we can do
-with these tools.
+If you have used Rails or some other Ruby framework chances are you already encountered
+Rake. Does `rake db:migrate` bring any memories? In fact even `rails generate` uses rake.
 
-### Jekyll and Rake
+Rake knows how to use shell commands and (ofcourse) understands Ruby.
+Like Rubygems Rake uses a file name `Rakefile`. Inside the `Rakefile` you write your
+tasks, and then you "command" Rake to execute those tasks through your Terminal.
 
-To give you an idea of how you can automate task for your benefit in Jekyll I will walk you
-through some code I found when I wanted to implement tags in Jekyll.
+Now lets see what we can do with these two.
+
+### Semi-Dynamic content with Jekyll and Rake
+
+To give you an idea of how you can build semi dynamic content in Jekyll I'll walk you
+through some code I found when I wanted to implement tags to this website.
 The code was written by Leon Bradley so I claim no copywrite.
 
-First lets see the whole code.
+Since we want out end result to be static
+
+First lets see the 'snippet' of code that generates tags based on my posts.
 
 
 {% highlight ruby %}
