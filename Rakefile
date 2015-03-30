@@ -52,7 +52,7 @@ task :develop => :build do
 
   ##
   #%x[firefox http://localhost:4000/]
-  %x[atom ./]
+  
   printHeader "Development mode entered."
   thread.join()
 end
