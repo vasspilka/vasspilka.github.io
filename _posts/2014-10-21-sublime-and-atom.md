@@ -2,7 +2,7 @@
 layout: post
 title: "Sublime and Atom"
 date: "2014-10-21"
-tags: atom sublime text-editor
+tags: text-editor
 ---
 
 I have been using sublime, almost from day one I switched to Gnu/Linux from Windows.

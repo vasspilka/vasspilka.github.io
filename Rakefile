@@ -48,10 +48,10 @@ task :develop => :build do
   thread = Thread.new { server.start }
   trap("INT") { server.shutdown }
   printHeader "Development server started at http://localhost:4000/"
-  printHeader "Opening Atom text editor..."
+  printHeader "Opening firefox editor..."
 
   ##
-  #%x[firefox http://localhost:4000/]
+  %x[firefox http://localhost:4000/]
   
   printHeader "Development mode entered."
   thread.join()

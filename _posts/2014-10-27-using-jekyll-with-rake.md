@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Semi dynamic website with Jekyll and Rake"
+title: "Semi dynamic website with Jekyll and Rake (Unfinished)"
 date: "2014-10-27"
 tags: rake ruby jekyll
 ---
