@@ -2,7 +2,7 @@
 layout: post
 title: "Zsh... oh my"
 date: "2014-10-07"
-tags: zsh bash terminal linux
+tags: terminal linux
 ---
 
 When I first started using Gnu/Linux, I wondered if there is a way to improve the terminal
