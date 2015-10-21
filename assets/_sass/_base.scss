@@ -199,3 +199,48 @@ pre {
         }
     }
 }
+
+// Disqus styling
+.comments {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    border-top: 1px dashed $dashColor;
+
+    #dsq-content {
+        margin-right: 24px;
+        max-width: 600px;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    a {
+        color: $textColor;
+    }
+
+    .dsq-textarea-background {
+        background: #fff;
+        border: 1px dashed $dashColor;
+        box-shadow: none;
+    }
+}
+
+// Tag Cloud
+.tag-cloud {
+    margin: 20px 0;
+    list-style: none;
+    display: block;
+    li {
+        display: inline-block;
+        a {
+            display: inline-block;
+            @include transition(color .3s ease-in);
+            &:hover {
+                color: $linkHoverColor;
+                text-decoration: none;
+            }
+        }
+    }
+}

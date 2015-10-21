@@ -37,9 +37,8 @@ After it loads though it seems pretty fast, at least to me.
 One thing that surprised me is that Atom provides spelling-correction out of the box, witch
 for me who is not a native English writer helps a lot!!
 
-Finally Atom is backed up by GitHub, I love GitHub! I think they move open software to a great
-direction, and I wouldn't know the half about software I know now if it were not for GitHub.
+Finally Atom is backed up by GitHub, and well... I love GitHub! I think they help move open software to a great
+direction, and I wouldn't know half about software I know now if it were not for GitHub.
 
 Anyhow, both Atom and Sublime are great text-editors, and I don't really believe Atom would even
-be here if it were not for Sublime. Any tool you chose to use, make sure you are using it to its
-full potential or at least half ;) .
+be here if it were not for Sublime. Any tool you chose to use, make sure you are using it to its full potential or at least half ;) .

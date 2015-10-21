@@ -15,7 +15,7 @@ Kairos wants you to take the chance, and knows you will succeed.
 
 Greeks describe opportunities as a woman that comes down from the sky, to catch lady opportunity one must grab her hair and pull her down, but she only has them
 on the front side of her head, so you can only grab them when she is coming, once she turns around, she is gone.
-I see that view as being over-simplified, with it you can see opportunities coming and all you have to do is catch them.
+I agree but see something missing, you can see opportunities coming and all you have to do is catch them.
 It is lacking one important detail... Know-how
 I think there are tree prerequisites for an opportunity to be caught.  
 The right circumstances, the know-how, and the action.
@@ -45,9 +45,9 @@ Or even realize he didn't want to go through in the first place.
 By delaying you can gather more information and further analyze the problem, prepare yourself for the moment of action, plan for your success.
 Time can give you insight to the problem and often some experience. It will give you better understanding of how to solve it, and can it can move the circumstances from being bad or "ok" to being perfect.
 
-Circumstances will not stay perfect though, after a while they will get worse and worse. Up to a point that action will bring almost certain failure.
-You see once Kairos closes the gate behind him it is insanely hard to squeeze through, most times impossible. And you never know when he decides to
-walk by again.
+Circumstances will not stay perfect though, after a while they will keep getting worse. Up to a point that action will bring almost certain failure.
+You see once Kairos closes the gate behind him it is insanely hard to squeeze through, most times impossible.
+And you never know when he decides to walk by again.
 
 To give you a taste of how delay can bring better outcomes I will set this article as an example.
 I written a big chunk of it within a day, and I was eager to share it with the world, since I was writing about delay though
@@ -56,7 +56,7 @@ After I waited for a week since the original writing, I decided there are not a 
 Here is the article as it used to be if you are interested. [Timing and Delay](https://github.com/vasspilka/vasspilka.github.io/blob/f9ac0019d9bdf4a7db2bfbbbf17ee29b10525c4f/_posts/2015-04-20-the-art-of-timing-and-delay.markdown)
 
 So how do we know that time is right? When should we choose to act, and when should we delay our actions?
-Well the answer to that is not simple.  
+Well the answer is not that simple.  
 They say novices should delay action for as long as they can, explore their options, themselves and their environment before taking the decision to act.
 Experts will just know, they will know because of their experience.
 Experience is pretty important in determining when to act, but it has to be coupled with observation, you have to see the signs and know what they mean.
@@ -68,9 +68,8 @@ To gain experience however one needs to take chances. Live the life he is given.
 Yes, delay, will give you a better understanding and some experience but nothings gives experience as the pure act of doing.
 But be ware you have to analyze the risks, is the experience gained worth more to you than the potential loss of failure?
 
-Experience is worth a lot to me!  
-So I will take chances in order to get a better understanding
-of Kairos, of when the time is right.   
+For me experience is worth a lot!  
+So I will take chances in order to get a better understanding of Kairos, of when the time is right.
 I will make mistakes.  
 I will fail, sometimes badly and I will suffer for it.  
 But the experience gained will be invaluable.

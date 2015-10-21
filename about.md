@@ -1,18 +1,28 @@
 ---
 layout: page
-title: About me
+title: About
 permalink: /about/
 ---
 
+<div id='me'></div>
+
+## About this blog
+
+This blog started out as a portfolio of some sorts, but later I figured out I enjoy writing, so now its turning out
+to be a hybrid between my thoughs and what I have experieced in IT.
+
+## About me
 ### I am a web enthusiast!!
 
-
-Right now I am studying Computer Science in Greece, In my free time I research the web,
+Right now I am studying Informatics in Greece, In my free time I research the web,
 code or go for long walks with my dog Chevy.
 
-I also enjoy reading and writing, as well as training Brazilian Jiu Jitsu.
+I also enjoy reading and writing, training Brazilian Jiu Jitsu and love music that comes from artistic souls,
+nature and philosophical discussions.
 
-I like tinkering with stuff, and I love customization, my favorite languages to code with are Ruby and Python,
-I am using Ruby with Rails and sometimes write Rake scripts.
+I like tinkering with stuff and customization, software-wise I have been experimenting with many languages and
+technologies, I grew especially fond of Ruby for its simplicity, Python for being dynamic and powerful, and
+Javascript since all it needs is a browser and seems to be the future of the web for many years to come.
 
-Python is great for general purpose coding.
+I have ambitions to work in A.I. in the future, the way humans process information, has always been a
+mystery that amazed me.

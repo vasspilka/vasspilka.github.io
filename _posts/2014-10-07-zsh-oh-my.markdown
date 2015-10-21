@@ -11,7 +11,7 @@ experience. Z shell or otherwise known as Zsh was among the first things I stumb
 ## What is Zsh?
 
 Zsh is a shell (The language we use in a terminal), you may be familiar with bash
-witch is the default for most linux distros including Ubuntu. Zsh is also available
+which is the default for most linux distros including Ubuntu. Zsh is also available
 for Mac, and Windows(if you are up for the chalenge). A lot of Zsh's power lies with
 a framework called [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 
@@ -27,7 +27,7 @@ Well there are quite a few of reason why zsh is AWSOME! But lets get started wit
 
 What if whenever you wanted to access a directory all you had to do is write it down,
 Without having to press `cd ` every time.  
-What if you didn't even have to write the whole directory? <!-- imagine -->
+What if you didn't even have to write the whole directory?
 What if you could just write `$ Dow` hit `Tab` , `Enter`  
 and find yourself in the `Downloads` directory.  
 What if you could write `$ Do/M/Bob` hit `Tab` and switch between the
@@ -36,7 +36,7 @@ using the `Tab` key and `Enter`
 
 Well... zsh does all these and a lot more!!  
 Hitting `Tab` will auto-complete any command or path if it is the only one available, otherwise
-you can chose witch one to use by `Tab` and `Enter` the one you want.
+you can chose which one to use by `Tab` and `Enter` the one you want.
 You can use it for auto-completing paths and almost anything else.  
 `command --` + `Tab` can be really convenient for seeing the options of a command.
 
@@ -44,11 +44,12 @@ Path replacement, lets say we have these 2 directories
   `/server/www/website1/current/vendor`  
   `/server/www/website2/current/vendor`  
 and want to go from the first one to the second,
-all we need to do is type <br> `$ cd website1 website2` and we will move to the second directory!<br>
+all we need to do is type  
+`$ cd website1 website2` and we will move to the second directory!  
 Awesome right?
 
-Another cool thing zsh knows how to do is approximation.
-Lets say I've written <br> `$ Downloafs/Books`, `Tab` to the rescue!! Hit it and it will fix your path
+Another cool thing zsh knows how to do is approximation. Lets say I've written  
+`$ Downloafs/Books`, `Tab` to the rescue!! Hit it and it will fix your path
 to `Downloads/Books`!
 
 ### Customization
@@ -56,8 +57,7 @@ to `Downloads/Books`!
 If you are familiar with bash you probably know about `.bashrc`. It is a file kept in your
 user directory, with all your bash customization. And custom scripts.
 
-Like bash zsh uses a file called `.zshrc`. But has improved
-the most used function of bash, `alias`.
+Like bash, zsh uses a file called `.zshrc`. But has an improved the `alias` command among other things.
 
 With `alias` you can set a "sortcut" for a command.
 In your `.zshrc` you can type something like,  
@@ -72,7 +72,7 @@ To use the suffix alias you simply have to put `alias -s [suffix]=[app]` with [s
 a file type and [app] being the app you want to open it with.  
 For example if you type `alias -s html=chomium` zsh will open any `.html` file with chromium
 by referring to them like so `$ my/project/index.html`. A good way to use this is putting a terminal
-text editor for all your text file types ;) .
+text editor like vim for all your text file types.
 
 The global alias is also quite useful.You can make an alias you will be able to use anywhere
 in the command-line. It is used like this , `alias -g PE="--port 1337 --environment test"`.
@@ -97,7 +97,7 @@ I'd say [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) is essential for 
 One plugin I found about recently and really enjoy is
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
 It colors commands and paths with red to warn you when they are wrong. Making it a lot less painful when you are
-about to hit `Enter` with an error in the command. Also it uses green for existing commands.
+about to hit `Enter` with an error in the command. And green for anything valid.
 
 ## Summing up
 
@@ -106,9 +106,3 @@ There are a lot of thing I did not cover in here. And a lot I do not know about 
 If you work often with the terminal learning more about your shell can save you a lot of time.
 And let you do things you did not even realize earlier.
 In my opinion Zsh can be a huge improvement over bash espesially if you use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
-
-
-So what are you waiting for? Are you using Zsh? Have you tried it?  
-Do you have any other shell suggestions?
-
-If you want to share something with me don't hesitate to comment below.
