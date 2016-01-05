@@ -51,7 +51,7 @@ task :develop => :build do
   printHeader "Opening firefox editor..."
 
   ##
-  %x[firefox http://localhost:4000/]
+  %x[google-chrome-stable http://localhost:4000/]
   
   printHeader "Development mode entered."
   thread.join()
