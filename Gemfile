@@ -1,4 +1,5 @@
 source "http://rubygems.org"
+ruby '2.3.0'
 
 # Always is compitable with Github Pages gem versions
 require 'json'
