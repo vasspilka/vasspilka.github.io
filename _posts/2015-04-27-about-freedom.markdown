@@ -16,17 +16,19 @@ independent and gave me the capability of not having to be right behind him watc
 So yesterday I was with him for a walk, on Sundays I sometimes let him have a free day, if he wanders off I let him have his walk alone,
 I return home do my stuff and wait for him there. This happened yesterday, I am used to him being alone outside, I trust he will not harm himself,
 or cause any trouble. This time though he did, I got a call from a friend saying my dog went to his place and is vomiting, he sounded very worried.
-It seemed he had eaten something bad and is not feeling good, when I arrived to my friends place he seemed to be a lot better, he was happy to see me and full
-of energy, I thought it was just something he had eaten and after vomiting he is fine. We casually went back home, he slept and everything went as normal for the
+It seemed he had eaten something bad and is not feeling good, I immediately rushed over there, by the time I arrived some minutes later he seemed to be a lot
+better, he was happy to see me, I thought it was just something he had eaten and after vomiting he is fine. 
+We casually went back home, he slept and everything went as normal for the
 rest of the day. Today though after waking up he started vomiting again, I could see something resembling to blood, got really worried and took him to the vet.
 There they examined him and gave him injections for vomiting and antibiotics. The antibiotics seems to have drained a lot of his energy which only made me worry more.
 Anyway, long story short he now seems to be better, sleeping a lot but also better.
 
-I learned something from this event. While with freedom one can explore, understand, evolve and create. He can also hurt, damage and destroy.
-Some people have little to no idea of what their actions might do to themselves or/and others. Giving someone freedom also gives a risk.
-A risk he might misuse that freedom, intentionally or not.
+This whole affair gave me a valuable lesson. While being free one can explore, understand, evolve and create. However he can also hurt, damage and destroy.
+Most people have little to no idea of what their actions might do to themselves or/and others. Freedom comes at a price.
+The price of its misuse, intentional or not.
 
-But how can we decide if we should give someone freedom or not? An anarchist might say that you just give everyone the freedom to do whatever they want.
+But how can we detemine when someone should be absolutely free? An anarchist might say that absolute freedom should be for everyone and things will balance
+themselves.
 Many would disagree. One could easily argue that you could not give much freedom to a three year old child. Giving
 her the freedom to make her own mistakes could prove disastrous, she could hurt herself badly or cause
 irreversible damage. Not because she wants to but because she lacks the knowledge
@@ -42,13 +44,13 @@ A safe environment is a place to nurture ones abilities to be responsible, creat
 But we cannot always control the environment, there are always unexpected things, or things out of our reach.
 That is why we need to teach responsibility and be able to trust.
 
-My parents always gave me a lot of freedom, maybe sometimes more than they should have, with that freedom I sometimes took risks that could harm myself and others
+I was given lot of freedom while growing up, maybe sometimes more than I should have, with that freedom I sometimes took risks that could harm myself and others
 I often was conscious of them, tried to minimize those risks, and was ready to accept any consequences that might come with them.
-But still I took them, maybe sometimes they where bold and irresponsible moves, but they have made me along with friends stronger and wiser.
+But still I took them, sometimes they where bold and irresponsible moves, but they have made me along with friends stronger and wiser.
 
 While I was growing up, I was free in a rather safe environment, but as everyone later in life I found myself in the real world.
 In the real world you have to be responsible, your actions matter they can create or destroy, they can heal or damage.
 To learn to be responsible though you need to make mistakes early on. There where it is relatively safe.  
 If you are denied of the possibility to make safe mistakes and train yourself, you are in greater risk to cause big damage later on.
 
-That is why the next time somebody asks me about freedom, I will respond that even freedom could use some boundaries.
+That is why the next time somebody asks me about freedom, I'll respond that even freedom could use some boundaries.

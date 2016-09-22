@@ -8,11 +8,10 @@ tags: [thoughts, life]
 We undoubtedly see hope as being a positive feeling. And I can clearly see why. Hope gives us strength to endure situations otherwise would be unbearable.
 It gives us reason to continue and is a warm and comforting feeling.
 
-Like most feelings though hope can be a boundary to our potential. It can blind us from seeing other possibilities, or solutions to the problem we are facing.
-Hope can trap you into spending too much or not enough time and energy for a cause that might not produce
-what is expected.
+Like some feelings though hope can be a boundary to our potential. It can blind us from seeing other possibilities, or solutions to the problem we are facing.
+Hope can trap you into spending too much or not enough time and energy for a cause that might not produce what is expected.
 
-I've been thinking about hope, we all have an understanding. But what is it really?  
+I've been pondering a lot about hope lately, we all have an understanding. But what is it really?
 The closer I could get is "The feeling we have when expecting a desired outcome to happen".  
 This means that hope and expectation are closely tied.
 This is why I believe hope can be traitorous sometimes. Expectations are often limiting. While someone expects an outcome,
@@ -45,13 +44,13 @@ loved, and for a good reason, despair is one of the worst and most unrewarding f
 But why not avoid expectations altogether. We can use our focus to explore our minds,
 and the world around us, not our desires and fears.
 We do not have to constantly evaluate what is going to happen, it is sometime better to just be,
-to enjoy the environment, explore the options, look at how things unfold, without the expectations.
+to enjoy the environment, explore the options, and then look at how at things unfold, without the expectations.
 
 I sometimes say to myself "No hope, No expectations, No limitations".
 
-Of course we can't avoid expectations altogether, not only coupled with logic they create science, in our daily lives
-we also take actions because we expect them to do something, we expect them to make a change in the world
-we interact with. Without them the wold would stay still.
+Of course we can't and should not avoid expectations altogether, not only coupled with logic they create science, in our daily lives
+we take actions because we expect them to do something, we expect them to make a change in the world we interact with.
+Without them the wold would be still.
 
 But we need to accept that hope is a psychological tool, to help us endure situations and comfort us.
-And expectation is just that... Expectation not reality.
+And expectations is just that... Expectations not reality.

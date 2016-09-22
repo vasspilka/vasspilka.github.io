@@ -5,19 +5,19 @@ published: true
 tags: [thoughts, life]
 ---
 
-I have learned a lesson recently, timing is important, it is one of the most important things for success.  
+I have learned a lesson recently, timing is important, it is not just important but arguably the most important matter for success.  
 Act too soon or too late and you will most likely fail.
 
 Greeks have this word called "Kairos", in English one would translate it to time, but it has little to do with the time we measure
 with a clock. Kairos is the right time. Its the time where (not when) an opportunity is open for the grabs.
-Kairos does not care about minutes or hours or even seconds, he only cares about the circumstances, he has the variables in their place.  
-Kairos wants you to take the chance, and knows you will succeed.
+Kairos does not care about minutes or hours or even seconds, he only cares about the circumstances, he has all the variables in their place,
+wants you to take the chance, and knows you will succeed.
 
-Greeks describe opportunities as a woman that comes down from the sky, to catch lady opportunity one must grab her hair and pull her down, but she only has them
-on the front side of her head, so you can only grab them when she is coming, once she turns around, she is gone.
-I agree but see something missing, you can see opportunities coming and all you have to do is catch them.
+There is an old Greek description of opportunities, it is said they are ladies comming down from the sky called, to catch one, you must grab her hair
+and pull her down, but she only has them on the front side of her head, so you can only grab her while she is coming, once she turns around, she is gone.
+I like this saying, but I feel there is something missing, you can see opportunities coming and all you have to do is catch them.
 It is lacking one important detail... Know-how
-I think there are tree prerequisites for an opportunity to be caught.  
+I think there are tree prerequisites for an opportunity to be caught. After it's been spoted.
 The right circumstances, the know-how, and the action.
 
 Thats why I imagine opportunities a little bit more complex.
@@ -33,10 +33,10 @@ You have to hear his song, understand it, and whistle it with him as you pass th
 He whistles silently though, sometimes you think you hear him but do not, sometimes he sings but you can't hear him.
 There are times you need to take the chance, try to pass through the gate with the song you are hearing, be it Kairos or an illusion.
 
-In my life I have made the mistake not to take some chances, many times I just waited next to the gate,
-too afraid to walk through, too afraid I would bump into it or of what I would find on the other side.
-But that denied me of valuable experience, I could have otherwise used the next time I saw an opportunity.
-Having taken these chances I would be able to recognize the whistling of Kairos more accurately.
+I have often made the mistake of not taking the chance, many times I waited next to the gate,
+afraid to walk through, afraid I would bump into it or of what I would find on the other side.
+But that denied me of valuable experience, I could have otherwise used the next time I saw an opportunity I wanted to take.
+Having taken these chances I would have been able to recognize the whistling of Kairos more accurately.
 
 Nevertheless delaying has its merits. Knowing how to be patient and being able to wait for a better outcome, is as important as having the courage to take a chance.
 Being able to delay an action for gratification, lets you have better control over yourself, and eventually over your life.  
@@ -51,25 +51,23 @@ And you never know when he decides to walk by again.
 
 To give you a taste of how delay can bring better outcomes I will set this article as an example.
 I written a big chunk of it within a day, and I was eager to share it with the world, since I was writing about delay though
-I decided to wait. The next day ideas started puring in, my content doubled within 3 days. And the quality tripled.
+I decided to wait. The next day ideas started puring in, the content and quality increased dramatically!
 After I waited for a week since the original writing, I decided there are not a whole lot more to add, so I published.
 Here is the article as it used to be if you are interested. [Timing and Delay](https://github.com/vasspilka/vasspilka.github.io/blob/f9ac0019d9bdf4a7db2bfbbbf17ee29b10525c4f/_posts/2015-04-20-the-art-of-timing-and-delay.markdown)
 
 So how do we know that time is right? When should we choose to act, and when should we delay our actions?
-Well the answer is not that simple.  
-They say novices should delay action for as long as they can, explore their options, themselves and their environment before taking the decision to act.
-Experts will just know, they will know because of their experience.
-Experience is pretty important in determining when to act, but it has to be coupled with observation, you have to see the signs and know what they mean.
-Then should act accordingly.
+Well the answer is not that simple. It all depends on your skill level, regarding the subject ofcourse.
+Novices should delay for as long as they can, explore their options, themselves and their environment before taking action.
+That is because a novice simply has no reference of which circumstances are right and how to use them effectively. When a novice takes an action
+prematurely it is almost guaranteed to fail. Therefore delaying an action comes at low cost, or even to a benefit at times.
+On the other hand experts will have an almost unexplainable knownledge of when the time is perfect to act. They will know because of their experience.
+
+As pointed in the beggining of this article know-how is one of the crucial prerequesites for success.
+And experience is part of that, however it has to be coupled with observation, you have to spot the
+signs while knowing what they mean and how to use them. Then should act accordingly.
 
 It is truly an art to know when the time is right, and as with any art, you need to practice. To master it you need experience.
 To gain experience however one needs to take chances. Live the life he is given. And learn from his mistakes.
 
 Yes, delay, will give you a better understanding and some experience but nothings gives experience as the pure act of doing.
 But be ware you have to analyze the risks, is the experience gained worth more to you than the potential loss of failure?
-
-For me experience is worth a lot!  
-So I will take chances in order to get a better understanding of Kairos, of when the time is right.
-I will make mistakes.  
-I will fail, sometimes badly and I will suffer for it.  
-But the experience gained will be invaluable.
