@@ -149,10 +149,9 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   directory_watcher
-  github-pages (= 98)
+  github-pages
   iconv
-  jekyll (= 3.2.1)
-  json
+  jekyll
   neat
   rake
   rdiscount

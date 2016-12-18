@@ -12,7 +12,8 @@ This blog started out as a portfolio of some sorts, but later I figured out I en
 to be a hybrid between my thoughs and what I have experieced in IT.
 
 ## About me
-### I am a web enthusiast!!
+
+<b>I am a web enthusiast!!</b>
 
 Right now I am studying Informatics in Greece, In my free time I research the web,
 code or go for long walks with my dog Chevy.

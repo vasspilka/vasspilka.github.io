@@ -35,6 +35,10 @@ $dashColor      : #e0e0e0;
 	#gradient > .vertical($startColor, $endColor);
 }
 
+.body {
+  font-size: 50px;
+}
+
 .header {
 	position: relative;
 	.clearfix();
