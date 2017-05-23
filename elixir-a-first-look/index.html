@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Intro to Elixir</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=680, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
+	<link rel="stylesheet" href="themes/ribbon/styles/screen.css">
+	
+		<link rel="stylesheet" href="styles/screen.css?1495535215575">
+	
+</head>
+<body class="list">
+	<header class="caption">
+		<h1 id="elixir-and-otp-a-first-look-">Elixir and OTP, a first look.</h1>
+<p>by <a href="https://github.com/vasspilka">@vasspilka</a></p>
+
+	</header>
+
+	
+	<section class="slide shout" ><div>
+		<h1>Elixir and OTP, a first look.</h1>
+<img src="images/elixir-lang-logo.png" alt="" height="200px"/>
+<h2>by <a href="https://github.com/vasspilka">@vasspilka</a></h2>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Quick Background</h1>
+
+	</div></section>
+	
+	<section class="slide shout quieter" ><div>
+		<h1>José |&gt; Elixir! What is it about?</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<img src="images/seven_languages.jpg" alt="" height="500px"/>
+<h2>Covers: Ruby, Io, Prolog, Scala, Erlang, Clojure, Haskell</h2>
+
+	</div></section>
+	
+	<section class="slide quietest shout" ><div>
+		<h1>Used 5 criteria to determine the language to use</h1>
+
+	</div></section>
+	
+	<section class="slide quietest shout" ><div>
+		<h1>Natural Syntax <br/> Fast and Repeatable Dev Cycle <br/> Concurrent and Fast <br/> Metaprogramming <br/> Failure Management</h1>
+<h2>Functional language with ruby-like syntax running on the battle-tested Erlang BEAM VM</h2>
+
+	</div></section>
+	
+	<section class="slide shout quieter" ><div>
+		<h1>What is Erlang/BEAM?</h1>
+<h2>Language + VM, Created by Ericsson in 1986 to support distributed, fault-tolerant, always-up systems</h2>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>1. Basic Types &amp; Syntax</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Strings &amp; Constants (Atoms)</h1>
+<pre><code>iex&gt; my_utf8_string = &quot;hello &quot; &lt;&gt; &quot;Iñtërnâtiônàlizætiøn&quot;</code>
+<code>&quot;hello Iñtërnâtiônàlizætiøn&quot;</code>
+<code>&shy;</code>
+<code>iex&gt; String.upcase(my_utf8_string)</code>
+<code>&quot;HELLO IÑTËRNÂTIÔNÀLIZÆTIØN&quot;</code>
+<code>&shy;</code>
+<code>iex&gt; :atom</code>
+<code>:atom</code>
+<code>&shy;</code>
+<code>iex&gt; Constant == :&quot;Elixir.Constant&quot;</code>
+<code>true</code>
+<code>&shy;</code>
+<code>iex&gt; is_atom(true) &amp;&amp; is_atom(false)</code>
+<code>true</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Numbers</h1>
+<pre><code>iex&gt; 1000 == 1_000</code>
+<code>true</code>
+<code>&shy;</code>
+<code>iex&gt; 0.314159e1 == 314159.0e-5</code>
+<code>true</code>
+<code>&shy;</code>
+<code>iex&gt; my_range = 1..5</code>
+<code>1..5</code>
+<code>&shy;</code>
+<code>iex&gt; 10 / 5</code>
+<code>2.0</code>
+<code>&shy;</code>
+<code>iex&gt; (rem(13, 12) + 2 + div(8, abs(3 - 5))) * round(6.4)</code>
+<code>42</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Tuples</h1>
+<pre><code>iex&gt; my_tuple = {:ok, &quot;return value&quot;, 715}</code>
+<code>{:ok, &quot;return value&quot;, 715}</code>
+<code>&shy;</code>
+<code>iex&gt; elem(my_tuple, 2)</code>
+<code>715</code>
+<code>&shy;</code>
+<code>iex&gt; put_elem(my_tuple, 2, 815)</code>
+<code>{:ok, &quot;return value&quot;, 815}</code>
+<code>&shy;</code>
+<code>iex&gt; my_elem</code>
+<code>{:ok, &quot;return value&quot;, 715}</code>
+<code>&shy;</code>
+<code>iex&gt; my_map = %{:first =&gt; &quot;Ted&quot;, :last =&gt; &quot;Naleid&quot;}</code>
+<code>%{first: &quot;Ted&quot;, last: &quot;Naleid&quot;}</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Lists</h1>
+<pre><code>iex&gt; my_list = [1, 2, 3]</code>
+<code>[1, 2, 3]</code>
+<code>&shy;</code>
+<code>iex&gt; my_list ++ [4, 5]</code>
+<code>[1, 2, 3, 4, 5]</code>
+<code>&shy;</code>
+<code>iex&gt; [0 | my_list]</code>
+<code>[0, 1, 2, 3]</code>
+<code>&shy;</code>
+<code>iex&gt; ex = [{:lang, &quot;Elixir&quot;}, {:creator, &quot;José&quot;}, {:version, 1.4}]</code>
+<code>[lang: &quot;Elixir&quot;, creator: &quot;José&quot;, version: 1.4]</code>
+<code>&shy;</code>
+<code>iex&gt; ex[:creator]</code>
+<code>&quot;José&quot;</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Maps</h1>
+<pre><code>iex&gt; date = %{year: 2017, month: &quot;March&quot;, day: &quot;23&quot;}</code>
+<code>%{year: 2017, month: &quot;March&quot;, day: 22}</code>
+<code>&shy;</code>
+<code>iex&gt; date.year</code>
+<code>2017</code>
+<code>&shy;</code>
+<code>iex&gt; date[:year] == date.year</code>
+<code>true</code>
+<code>&shy;</code>
+<code>iex&gt; %{date | day: 23}</code>
+<code>%{year: 2017, month: &quot;March&quot;, day: 23}</code>
+<code>&shy;</code>
+<code>iex&gt; %{&quot;string&quot; =&gt; :val, 7 =&gt; 8, &amp;(&amp;1) =&gt; &quot;say what?&quot;}</code>
+<code>%{7 =&gt; 8, #Function&lt;...&gt; =&gt; &quot;say what?&quot;, &quot;string&quot; =&gt; :val}</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Structs</h1>
+<pre><code>iex&gt; defmodule Person do</code>
+<code>...&gt;   defstruct first: &quot;Vasilis&quot;, last: &quot;Spilka&quot;</code>
+<code>...&gt; end</code>
+<code>{:module, Person, …}</code>
+<code>&shy;</code>
+<code>iex&gt; %Person{}</code>
+<code>%Person{first: &quot;Vasilis&quot;, last: &quot;Spilka&quot;}</code>
+<code>&shy;</code>
+<code>iex&gt; %Person{first: &quot;Vasek&quot;}</code>
+<code>%Person{first: &quot;Vasek&quot;, last: &quot;Spilka&quot;}</code>
+<code>&shy;</code>
+<code>iex&gt; %Person{nope: &quot;Bad Field&quot;}</code>
+<code>** (CompileError) iex:4: unknown key :nope for struct</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Structs &lt;&gt; extra</h1>
+<pre><code>iex&gt; boss = %Person{first: &quot;Ragnaros&quot;, last: &quot;Firelord&quot;}</code>
+<code>%Person{first: &quot;Ragnaros&quot;, last: &quot;Firelord&quot;}</code>
+<code>&shy;</code>
+<code>iex&gt; is_map(boss)</code>
+<code>true</code>
+<code>&shy;</code>
+<code>iex&gt; IO.inspect(boss, structs: false)</code>
+<code>%{__struct__: Person, first: &quot;Ragnaros&quot;, last: &quot;Firelord&quot;}</code>
+<code>&shy;</code>
+<code>iex&gt; defmodule Elemental, do: defstruct [:first, :last]</code>
+<code>{:module, Elemental, ...}</code>
+<code>&shy;</code>
+<code>iex&gt; boss = %{boss | __struct__: Elemental}</code>
+<code>%Elemental{first: &quot;Ragnaros&quot;, last: &quot;Firelord&quot;}</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Sigils</h1>
+<pre><code>iex&gt; ~w(foo bar baz)</code>
+<code>[&quot;foo&quot;, &quot;bar&quot;, &quot;baz&quot;]</code>
+<code>&shy;</code>
+<code>iex&gt; ~w(foo bar baz)a</code>
+<code>[:foo, :bar, :baz]</code>
+<code>&shy;</code>
+<code>iex&gt; ~s(String with escape codes \x26 #{&quot;inter&quot; &lt;&gt; &quot;polation&quot;})</code>
+<code>&quot;String with escape codes &amp; interpolation&quot;</code>
+<code>&shy;</code>
+<code>iex&gt; regexp = ~r/foo|bar/</code>
+<code>~r/foo|bar/</code>
+<code>&shy;</code>
+<code>iex&gt; &quot;foo&quot; =~ regexp</code>
+<code>true</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Closures</h1>
+<pre><code>iex&gt; sum = fn a, b -&gt; a + b end</code>
+<code>#Function&lt;12.90072148/2 in :erl_eval.expr/5&gt;</code>
+<code>&shy;</code>
+<code>iex&gt; sum.(1, 2)</code>
+<code>3</code>
+<code>&shy;</code>
+<code>iex&gt; &amp;(&amp;1 + &amp;2).(1, 2) # shortened closure syntax</code>
+<code>3</code>
+<code>&shy;</code>
+<code>iex&gt; fun = fn kl -&gt; Enum.reduce(kl, &quot;&quot;, &amp; &amp;2 &lt;&gt; elem(&amp;1, 1)) end</code>
+<code>#Function&lt;6.87737649/1 in :erl_eval.expr/5&gt;</code>
+<code>&shy;</code>
+<code>iex&gt; fun.(foo: &quot;foo&quot;, bar: &quot;bar&quot;, bux: &quot;bux&quot;)</code>
+<code>&quot;foobarbux&quot;</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Pattern Matching</h1>
+<pre><code>iex&gt; a = {:ok, 1}</code>
+<code>{:ok, 1}  </code>
+<code>&shy;</code>
+<code>iex&gt; {:ok, b} = {:ok, 1}</code>
+<code>{:ok, 1}</code>
+<code>&shy;</code>
+<code>iex&gt; b</code>
+<code>1    </code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Pattern Matching Lists</h1>
+<pre><code>iex&gt; [a, b, c] = [1, 2, 3]</code>
+<code>[1, 2, 3]</code>
+<code>&shy;</code>
+<code>iex&gt; a</code>
+<code>1</code>
+<code>&shy;</code>
+<code>iex&gt; [head | tail] = [1, 2, 3]</code>
+<code>[1, 2, 3]</code>
+<code>&shy;</code>
+<code>iex&gt; head</code>
+<code>1</code>
+<code>&shy;</code>
+<code>iex&gt; tail</code>
+<code>[2, 3]</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Pattern Matching Structs</h1>
+<pre><code>case HTTP.get(url) do</code>
+<code>  {:ok, %HTTP.Resp{ status: 200, body: body }} -&gt;</code>
+<code>    IO.puts body</code>
+<code>  {:ok, %HTTP.Resp{ status: 404 }} -&gt;</code>
+<code>    IO.puts &quot;Not found :(&quot;</code>
+<code>  {:ok, %HTTP.Resp{ status: status }} -&gt;</code>
+<code>    IO.puts &quot;HTTP Status: #{status}&quot;</code>
+<code>  {:error, %HTTP.Error{ reason: reason }} -&gt;</code>
+<code>    IO.inspect reason</code>
+<code>  _ -&gt;</code>
+<code>    IO.puts &quot;¯\_(ツ)_/¯&quot;</code>
+<code>end     </code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Even More Pattern Matching</h1>
+<pre><code>def execute({:ok, good_value}) do</code>
+<code>  IO.puts &quot;Known good value: #{good_value}&quot;</code>
+<code>end</code>
+<code>&shy;</code>
+<code>def execute({:error, error_reason}) do</code>
+<code>  IO.puts &quot;Error! #{error_reason}&quot;</code>
+<code>end</code>
+<code>&shy;</code>
+<code>iex&gt; execute({:ok, &quot;Yay!&quot;})</code>
+<code>Known good value: Yay!</code>
+<code>&shy;</code>
+<code>iex&gt; execute({:error, &quot;Boo!&quot;})</code>
+<code>Error! Boo!</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Pipe Operator <code>|&gt;</code></h1>
+<p>Like unix pipe operator, it passes result from 
+last method as first argument</p>
+<pre><code>to_string(Enum.reduce(Enum.map([1,2,3], &amp; &amp;1 * 2), 0, &amp; &amp;1 + &amp;2))</code>
+<code>&shy;</code>
+<code>list = [18, 31, 30, 30, 33, 6]</code>
+<code>list = Enum.map(list, &amp; &amp;1 + 5)</code>
+<code>list = List.insert_at(list, 3, 40) </code>
+<code>list = Enum.map(list, &amp; &amp;1 * 3)</code>
+<code>&shy;</code>
+<code>[18, 31, 30, 30, 33, 6]</code>
+<code>|&gt; Enum.map(&amp; &amp;1 + 5)</code>
+<code>|&gt; List.insert_at(3, 40) </code>
+<code>|&gt; Enum.map(&amp; &amp;1 * 3)</code></pre><p>Outputs <code>&#39;Elixir!&#39;</code> ⊙.☉ Woot?</p>
+
+	</div></section>
+	
+	<section class="slide quietest" ><div>
+		<h1>Concurrency Built-in.</h1>
+<pre><code>iex&gt; parent = self()</code>
+<code>#PID&lt;0.90.0&gt;</code>
+<code>&shy;</code>
+<code>iex&gt; spawn(fn -&gt; send parent, &quot;hello world&quot; end)</code>
+<code>#PID&lt;0.93.0&gt;</code>
+<code>&shy;</code>
+<code>iex&gt; receive do message -&gt; IO.puts message end</code>
+<code>hello world</code>
+<code>:ok</code></pre><h2>Actor Model</h2>
+
+	</div></section>
+	
+	<section class="slide quietest" ><div>
+		<h1>Simple Interop with Erlang</h1>
+<p><br/></p>
+<pre><code>iex&gt; :crypto.md5(&quot;sekr1t&quot;)</code>
+<code>&lt;&lt;192, 151, 240, 131, 252, 86, 1, 90, 71, 171, 2, …</code></pre><p>Can easily leverage 30+ years of Erlang libraries</p>
+
+	</div></section>
+	
+	<section class="slide quieter shout" ><div>
+		<h1>Metaprogramming!</h1>
+<h2>How expressive can you make your code</h2>
+
+	</div></section>
+	
+	<section class="slide quietest" ><div>
+		<h1>Hygenic Macros</h1>
+<pre><code>defmacro unless(expr, opts) do</code>
+<code>  quote do</code>
+<code>    if(!unquote(expr), unquote(opts))</code>
+<code>  end</code>
+<code>end</code>
+<code>&shy;</code>
+<code>unless true do</code>
+<code>  IO.puts &quot;this will never be seen&quot;</code>
+<code>end</code></pre><h2>Most of the standard library is written using macros</h2>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Easy Access to AST</h1>
+<pre><code>iex&gt; ast = quote, do 2 * 2 / 7</code>
+<code>{:/,[context: Elixir, import: Kernel],</code>
+<code> [{:*,[context: Elixir, import: Kernel], [2, 2]}, 7]}</code></pre><p>Underlying AST looks a bit like a lisp</p>
+<h2>Full discussion bigger than this presentation, check out &quot;Metaprogramming Elixir&quot;, by Chris McCord</h2>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>2. OTP</h1>
+<h2>Collection of libraries to ease programming distributed applications. Now a common programming pattern.</h2>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Failure Management</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Abstractions in Elixir <br/> (Mostly thin wrappers around Erlang/OTP)</h1>
+<ul>
+<li>Application</li>
+<li>Supervisor</li>
+<li>Genserver</li>
+<li>GenStage</li>
+<li>Agent</li>
+<li>Task</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Supervision Trees</h1>
+<img src="images/hao_01.png" alt="" height="500px"/>
+
+	</div></section>
+	
+	<section class="slide smaller-code" ><div>
+		<pre><code>defmodule SimpleQueue do</code>
+<code>  use GenServer</code>
+<code>&shy;</code>
+<code>  def start_link(state \\ []) do</code>
+<code>    GenServer.start_link(__MODULE__, state, name: __MODULE__)</code>
+<code>  end</code>
+<code>&shy;</code>
+<code>  def queue,          do: GenServer.call(__MODULE__, :queue)</code>
+<code>  def dequeue,        do: GenServer.call(__MODULE__, :dequeue)</code>
+<code>  def enqueue(value), do: GenServer.cast(__MODULE__, {:enqueue, value})</code>
+<code>&shy;</code>
+<code>  def handle_call(:queue, _from, state), do: {:reply, state, state}</code>
+<code>&shy;</code>
+<code>  def handle_call(:dequeue, _from, []), do: {:reply, nil, []}</code>
+<code>  def handle_call(:dequeue, _from, [value|state]) do</code>
+<code>    {:reply, value, state}</code>
+<code>  end</code>
+<code>&shy;</code>
+<code>  def handle_cast({:enqueue, value}, state) do</code>
+<code>    {:noreply, state ++ [value]}</code>
+<code>  end</code>
+<code>end</code>
+<code>&shy;</code>
+<code>SimpleQueue.start_link([1,2,3,4,5])</code>
+<code>SimpleQueue.queue  #=&gt; [1,2,3,4,5]</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Erlang Activity Monitor</h1>
+<pre><code>iex&gt; :observer.start</code></pre><img src="images/observer.png" alt="" height="500px"/>
+
+	</div></section>
+	
+	<section class="slide shout quieter" ><div>
+		<h1>Great Single-Box Scalability</h1>
+<h2>Often 100&#39;s of thousands to millions of processes per machine <br/> ~2KB of stack/heap per thread</h2>
+
+	</div></section>
+	
+	<section class="slide shout quietest" ><div>
+		<h1>Most Languages Littered with <br/>Defensive Programming</h1>
+<h2>Miss an edge case and your app crashes<br/> ex: Goroutines aren&#39;t memory isolated…one dying takes down entire process</h2>
+
+	</div></section>
+	
+	<section class="slide shout quietest" ><div>
+		<h1>Better Architecture -&gt; Cleaner Code</h1>
+<h2>Makes developers happy</h2>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Tooling</h1>
+
+	</div></section>
+	
+	<section class="slide quietest smaller-code" ><div>
+		<h1>Mix Build Tool</h1>
+<pre><code>$ mix new myapp</code>
+<code>* creating README.md</code>
+<code>* creating .gitignore</code>
+<code>* creating mix.exs</code>
+<code>* creating config</code>
+<code>* creating config/config.exs</code>
+<code>* creating lib</code>
+<code>* creating lib/myapp.ex</code>
+<code>* creating test</code>
+<code>* creating test/test_helper.exs</code>
+<code>* creating test/myapp_test.exs</code>
+<code>&shy;</code>
+<code>Your mix project was created successfully.</code>
+<code>You can use mix to compile it, test it, and more:</code>
+<code>&shy;</code>
+<code>    cd myapp</code>
+<code>    mix test</code>
+<code>&shy;</code>
+<code>Run `mix help` for more commands.</code></pre>
+	</div></section>
+	
+	<section class="slide quietest smaller-code" ><div>
+		<h1>Hex Package Manager</h1>
+<pre><code>defmodule MyProject.Mixfile do</code>
+<code>  use Mix.Project</code>
+<code>&shy;</code>
+<code>  def project do</code>
+<code>    [app: :myapp,</code>
+<code>     version: &quot;0.0.1&quot;,</code>
+<code>     elixir: &quot;~&gt; 1.4.4&quot;,</code>
+<code>     deps: deps()]</code>
+<code>  end   </code>
+<code>&shy;</code>
+<code>  def application do</code>
+<code>    [extra_applications: [:logger]]</code>
+<code>  end</code>
+<code>&shy;</code>
+<code>  defp deps do</code>
+<code>    [{:ecto, &quot;~&gt; 0.11.3&quot;},</code>
+<code>     {:postgrex, &quot;~&gt; 0.8.1&quot;},</code>
+<code>     {:cowboy, github: &quot;extend/cowboy&quot;}]</code>
+<code>  end</code>
+<code>end</code></pre>
+	</div></section>
+	
+	<section class="slide quietest smaller-code" ><div>
+		<h1><code>iex</code> is a Great REPL</h1>
+<pre><code>iex&gt; h Enum.map&lt;tab&gt;</code>
+<code>map/2           map_join/3      map_reduce/3</code>
+<code>&shy;</code>
+<code>iex&gt; h Enum.map/2</code>
+<code>&shy;</code>
+<code>                            def map(collection, fun)</code>
+<code>&shy;</code>
+<code>Returns a new collection, where each item is the result of invoking fun </code>
+<code>on each corresponding item of collection.</code>
+<code>&shy;</code>
+<code>For dicts, the function expects a key-value tuple.</code>
+<code>&shy;</code>
+<code>Examples</code>
+<code>&shy;</code>
+<code>┃ iex&gt; Enum.map([1, 2, 3], fn(x) -&gt; x * 2 end)</code>
+<code>┃ [2, 4, 6]</code>
+<code>┃</code>
+<code>┃ iex&gt; Enum.map([a: 1, b: 2], fn({k, v}) -&gt; {k, -v} end)</code>
+<code>┃ [a: -1, b: -2]</code></pre>
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Debugging via <code>pry</code></h1>
+<pre><code>require IEx</code>
+<code>&shy;</code>
+<code>def index(conn, _params) do</code>
+<code>  IEx.pry</code>
+<code>  conn |&gt; render &quot;index&quot;</code>
+<code>end</code></pre><p>Similar to the JavaScript <code>debugger;</code> command</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Deployment</h1>
+<p>With Erlang/OTP releases</p>
+<ul>
+<li>Distilery</li>
+<li>edeliver</li>
+</ul>
+<p>Hot-code swapping and other Beam goodies</p>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Solid Documentation</h1>
+<h2>mix hex.publish docs</h2>
+
+	</div></section>
+	
+	<section class="slide shout quieter" ><div>
+		<h1>Ecosystem &amp; Community</h1>
+
+	</div></section>
+	
+	<section class="slide shout quieter" ><div>
+		<h1>#elixir on slack</h1>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<p>Noteable Libraries</p>
+<ul>
+<li>Phoenix</li>
+<li>Ecto</li>
+<li>Nerves Project</li>
+<li>Absinthe</li>
+</ul>
+<p>Noteable Projects</p>
+<ul>
+<li>Firestorm</li>
+<li>Farmbot</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Great, Growing Community</h1>
+<p><img src="images/hex_downloads.png" alt="" height="400px"/>
+Hex Downloads (from <a href="https://twitter.com/emjii/status/613370295618007040">@emjii</a> on 2015-06-24)</p>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Notable Sites</h1>
+<ul>
+<li><a href="https://elixir-lang.org/">https://elixir-lang.org/</a> Official Elixir Page</li>
+<li><a href="https://hex.pm/">https://hex.pm/</a> Official Package Distributor (Also for Erlang)</li>
+<li><a href="https://elixirforum.com/">https://elixirforum.com/</a> Elixir Forum</li>
+<li><a href="https://elixirstatus.com/">https://elixirstatus.com/</a> Elixir articles, news, and library updates </li>
+<li><a href="https://github.com/h4cc/awesome-elixir">https://github.com/h4cc/awesome-elixir</a> Just an Awesome list</li>
+<li><a href="https://elixir.libhunt.com/">https://elixir.libhunt.com/</a> Elixir Library search with categories</li>
+<li><a href="http://plataformatec.com.br/elixir-radar/jobs">http://plataformatec.com.br/elixir-radar/jobs</a> Elixir Jobs</li>
+<li><a href="https://github.com/lexmag/elixir-style-guide">https://github.com/lexmag/elixir-style-guide</a> Elixir Style Guide</li>
+<li><a href="https://phoenix-battleship.herokuapp.com/">https://phoenix-battleship.herokuapp.com/</a> Battleships!!! (I love this one)</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<ul>
+<li><a href="https://www.facebook.com/groups/1480245995319184/">https://www.facebook.com/groups/1480245995319184/</a> Elixir &amp; Phoenix (CZ, SK) by Michal Hantl</li>
+<li><a href="https://www.meetup.com/prag-ex-Elixir-Erlang-Prague/">https://www.meetup.com/prag-ex-Elixir-Erlang-Prague/</a> prag.ex Elixir &amp; Erlang in Prague</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide " ><div>
+		<h1>Companies using Elixir</h1>
+<ul>
+<li>Discord</li>
+<li>Bleacher Report</li>
+<li>Pinterest</li>
+<li>Lexmark</li>
+</ul>
+<p>++ Many more <a href="https://devhub.io/repos/doomspork-elixir-companies">https://devhub.io/repos/doomspork-elixir-companies</a></p>
+
+	</div></section>
+	
+	<section class="slide shout quietest" ><div>
+		<h1>Elixir&#39;s Strengths<br/><br/>Apps with many connections &amp; high uptime requirements</h1>
+<h2>(i.e. Internet of Things, REST/socket webservices, Mobile App back-end, Telephony)</h2>
+
+	</div></section>
+	
+	<section class="slide shout quietest" ><div>
+		<h1>Elixir Weaknesses<br/><br/>Significant Graphics/GUI or Sequential Math</h1>
+<h2>There are better languages for the next Doom or Bitcoin mining</h2>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<p><img src="images/programming_elixir.jpg" alt="Programming Elixir" height="450px"/>
+<img src="images/elixir_in_action.png" alt="Elixir in Action" height="450px"/></p>
+
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Questions?</h1>
+<p><br/><br/>
+Find me @
+<a href="https://twitter.com/vasspilka">https://twitter.com/vasspilka</a>
+<a href="https://github.com/vasspilka">https://github.com/vasspilka</a></p>
+
+	</div></section>
+	
+
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+
+	
+		<script src="node_modules/shower-core/shower.min.js?1449424134000"></script>
+	
+
+	
+
+	<!-- Shower: http://shwr.me -->
+</body>
+</html>
