@@ -558,6 +558,7 @@ Hex Downloads (from [@emjii](https://twitter.com/emjii/status/613370295618007040
 
   * https://www.facebook.com/groups/1480245995319184/ Elixir & Phoenix (CZ, SK) by Michal Hantl
   * https://www.meetup.com/prag-ex-Elixir-Erlang-Prague/ prag.ex Elixir & Erlang in Prague
+  * http://vasspilka.github.io/elixir-a-first-look/ These slides
   
 !SLIDE
 # Companies using Elixir
