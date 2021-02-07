@@ -46,11 +46,11 @@ and the world around us, not our desires and fears.
 We do not have to constantly evaluate what is going to happen, it is sometime better to just be,
 to enjoy the environment, explore the options, and then look at how at things unfold, without the expectations.
 
-I sometimes say to myself "No hope, No expectations, No limitations".
+I have this saying "No hope, No expectations, No limitations".
 
-Of course we can't and should not avoid expectations altogether, not only coupled with logic they create science, in our daily lives
+Of course we can't and should not avoid expectations entirely, not only coupled with logic they create science, in our daily lives
 we take actions because we expect them to do something, we expect them to make a change in the world we interact with.
-Without them the wold would be still.
+Without them the world would be still.
 
-But we need to accept that hope is a psychological tool, to help us endure situations and comfort us.
-And expectations is just that... Expectations not reality.
+But we need to accept that hope is a psychological tool, to help us endure situations and comfort/motivate us.
+And expectations are just that... Expectations not reality.

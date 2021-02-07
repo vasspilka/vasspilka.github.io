@@ -22,7 +22,7 @@ Desires are a basic need for human existence.
 
 But are they all that good? Should we always strive to have desires and be dissatisfied. I do not think that's the right way either.
 In would suggest that one should be in control of his desires, and should use them
-as a tool to push himself towards the goals he has set in life.
+as a tool to push himself towards the goals he/she has set in life.
 
 Satisfaction is not something lasting. Often when satisfying a desire it goes through a cycle and then comes back. Once back you'll find yourself back in the state of dissatisfaction unless you ignore it, or distract yourself with something else.
 
@@ -32,7 +32,7 @@ Satisfying a desire gives us this nice feeling of accomplishment we feel whole, 
 
 But what if you have a desire that doesn't get satisfied, and you get reminded of it frequently, often by yourself.
 Is a desire like that healthy to nourish? Or should one try to overcome it?
-Rationally one would want to keep a desire in hopes it is goinf be satisfied sometime in the future.
+Rationally one would only want to keep a desire with hopes it is going be satisfied sometime in the future.
 Why else would someone torment himself with dissatisfaction?
 
 Maybe it is the weakness we all have to resist feelings.

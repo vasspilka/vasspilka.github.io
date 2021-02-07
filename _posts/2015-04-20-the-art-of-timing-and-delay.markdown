@@ -13,11 +13,11 @@ with a clock. Kairos is the right time. Its the time where (not when) an opportu
 Kairos does not care about minutes or hours or even seconds, he only cares about the circumstances, he has all the variables in their place,
 wants you to take the chance, and knows you will succeed.
 
-There is an old Greek description of opportunities, it is said they are ladies comming down from the sky called, to catch one, you must grab her hair
-and pull her down, but she only has them on the front side of her head, so you can only grab her while she is coming, once she turns around, she is gone.
+There is an old Greek description of opportunities, it is said they are female spirits comming down from the sky, to catch one, you must grab her hair
+and pull her down, but they only have them on the front side of their head, so you can only grab her while she is coming, once she turns around, she is gone and uncachable.
 I like this saying, but I feel there is something missing, you can see opportunities coming and all you have to do is catch them.
 It is lacking one important detail... Know-how
-I think there are tree prerequisites for an opportunity to be caught. After it's been spoted.
+I think there are tree prerequisites for an opportunity to be caught after it's been spoted.
 The right circumstances, the know-how, and the action.
 
 Thats why I imagine opportunities a little bit more complex.
@@ -39,14 +39,14 @@ But that denied me of valuable experience, I could have otherwise used the next 
 Having taken these chances I would have been able to recognize the whistling of Kairos more accurately.
 
 Nevertheless delaying has its merits. Knowing how to be patient and being able to wait for a better outcome, is as important as having the courage to take a chance.
-Being able to delay an action for gratification, lets you have better control over yourself, and eventually over your life.  
+Being able to delay an action for gratification, lets you have better control over yourself, and eventually over your life.
 By being patient, one can observe when the time is best to walk through that gate, and find himself on the other side.
 Or even realize he didn't want to go through in the first place.  
 By delaying you can gather more information and further analyze the problem, prepare yourself for the moment of action, plan for your success.
-Time can give you insight to the problem and often some experience. It will give you better understanding of how to solve it, and can it can move the circumstances from being bad or "ok" to being perfect.
+Time can give you insight to the problem and often some experience. It will give you better understanding of how to solve it, and it can move the circumstances from being bad or "ok" to being perfect.
 
 Circumstances will not stay perfect though, after a while they will keep getting worse. Up to a point that action will bring almost certain failure.
-You see once Kairos closes the gate behind him it is insanely hard to squeeze through, most times impossible.
+You see as Kairos closes the gate behind him it is insanely hard to squeeze through, most times impossible.
 And you never know when he decides to walk by again.
 
 To give you a taste of how delay can bring better outcomes I will set this article as an example.
