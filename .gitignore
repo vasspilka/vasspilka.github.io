@@ -2,3 +2,6 @@ _site
 .sass-cache
 node_modules
 converted
+
+# Mac DS store
+.DS_Store

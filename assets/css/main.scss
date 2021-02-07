@@ -1,8 +1,8 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-// Special thanks to Leon Radley (http://leon.radley.se/) and Matt Bolt (http://www.mattboldt.com)
 
+// Special thanks to Leon Radley (http://leon.radley.se/) and Matt Bolt (http://www.mattboldt.com)
 
 @charset "utf-8";
 
@@ -14,19 +14,18 @@
 // Our variables
 $code-font-family: "Ubuntu Mono";
 
+$spacing-unit: 30px;
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
+$text-color: #111;
 $background-color: #222933;
-$brand-color:      #2a7ae2;
+$brand-color: #2a7ae2;
 
-$grey-color:       #666;
+$grey-color: #666;
 $grey-color-light: lighten($grey-color, 30%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-laptop:        820px;
+$on-palm: 600px;
+$on-laptop: 820px;
 
 // Grid
 $columnWidth: 40px;
@@ -35,18 +34,17 @@ $columns: 14;
 $asideColumns: 3;
 
 // Colors
-$selectColor    : #f1f1f1;
-$textColor      : #121212;
-$headingColor   : #444;
-$linkColor      : darken(#3aa9be, 15%);
-$linkHoverColor : saturate($linkColor, 20%);
-$accentColor    : lighten(#1c525c, 25%);
-$dashColor      : #e0e0e0;
+$selectColor: #f1f1f1;
+$textColor: #121212;
+$headingColor: #444;
+$linkColor: darken(#3aa9be, 15%);
+$linkHoverColor: saturate($linkColor, 20%);
+$accentColor: lighten(#1c525c, 25%);
+$dashColor: #e0e0e0;
 
 code {
-    font-family: $code-font-family;
+  font-family: $code-font-family;
 }
-
 
 // Using media queries with like this:
 // @include media-query($palm) {
@@ -56,47 +54,33 @@ code {
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
-
 
 // #wrap-0{
 //   z-index:-999;
 // }
 
-
-#pixie{
-  position:fixed;
-  right:0;
-  top:0;
-  display:inline-block;
-  z-index:0;
+#pixie {
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  z-index: 0;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "bourbon/bourbon",
-        "neat/neat",
-        "base/base",
-        "mixin",
-        "reset",
-        "base",
-        "layout",
-        "header",
-        "modules/card",
-        "../fonts/style",
-        "syntax-highlighting",
-        "aside",
-        "main",
-        "project",
-        "about",
-        "cv"
-;
+@import "bourbon/bourbon", "neat/neat", "base/base", "mixin", "reset", "base",
+  "layout", "header", "modules/card", "../fonts/style", "syntax-highlighting",
+  "aside", "main", "project", "about", "cv";
 
+#top-image {
+  width: 100%;
+  position: static;
+}
 
-#top-image{
-    width:100%;
-    position:static;
+#typed {
+  right: 30px;
 }
