@@ -16,7 +16,7 @@ Initially the concept was around an article curator, where the agents would chos
 ## Enter Microwords
 
 While the project was initially inspired by the forementioned idea, it has since parted and evolved into a project of it's own and is turning out very different. It is still early to say what exactly this project is evolving to, however I am starting to see a lot of potential in it. In a world of mass social media where information is processed and predigested for you, I see Microwords bringing back the joy of exploration and discoverability, a place
-where people can collaborate and build "worlds" of content together, instead of competing for user attention with short lived and viral/click-baity pieces. I see a place where content and the experience of getting to it is fun and nourishing.
+where people can collaborate and build "worlds" of content together, instead of competing for user attention with short lived and viral/click-baity pieces. In that place the content and the experience of getting to it is fun and nourishing.
 But I feel we are getting ahead of ourselves and it's still not clear what Microwords is even about and more importantly what is it we need to build it so next up lets focus on the requirements.
 
 ## Requirement
