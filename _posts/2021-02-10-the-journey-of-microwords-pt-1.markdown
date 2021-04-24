@@ -229,14 +229,3 @@ This issue troubled me, my goal was to get to a FIFO list that would act as a st
 After a lot of mental struggle it was clear that this was not the correct approach... That is when a new idea presented to me. What if our worlds would have some space inside them in which we could place artefacts, the explorers could move around and explore the space inside a world and if a given position was empty they could place a new artefact otherwise they could interact with the artefacts that was placed there. This idea solved a lot of technical problems for me, but more importantly it brought this new fun aspect to Microwords, now it felt more like a physical place, one which can be explored rather it being a feed to scroll through. Of-course this poses other UI requirements for example if we model a two dimensional space we need to move north, east, south and west, so find content a user would have to use the arrow or "wasd" keys, this would not necessarily be bad and it could actually be nice for the user, they could learn in which areas certain type of content tends to be and explore areas around there, then maybe they can go to other areas to see what is there, since there would be locations people could collaborate and build regions of content. But we are not confined to two dimensions, in theory we could create a one dimensional space and explorers could jump from location to location randomly, or alternatively build a world with seven dimensions to achieve a similar way to move semi-randomly by always increasing or decreasing a single unit in a random dimension, these multidimensional spaces might sound complex but in reality they would not need to be so hard to implement.
 
 In our next article in the series we are going to create the concept of a world and locations, then we will further develop our application so that we can move around in a two dimensional space and see artefacts.
-
-
----------------------
-
-
-# Ruleset trouble
-
-# Actions
-
-# Type definitions
-
