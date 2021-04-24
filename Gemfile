@@ -19,6 +19,7 @@ gem 'rdiscount'
 
 
 # Gems for developement
+gem 'rouge'
 gem 'bourbon'
 gem 'neat'
 gem 'rake'

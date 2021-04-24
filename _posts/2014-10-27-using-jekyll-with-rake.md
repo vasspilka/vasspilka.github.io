@@ -2,7 +2,7 @@
 layout: post
 title: "Semi dynamic website with Jekyll and Rake (Unfinished)"
 date: "2014-10-27"
-tags: rake ruby jekyll
+tags: blogging
 ---
 
 ### Jekyll
@@ -109,6 +109,18 @@ task :tag_cloud do
     file.puts html
   end
   puts 'Done.'
+end
+{% endraw %}
+{% endhighlight %}
+
+{% highlight elixir %}
+{% raw %}
+defmodule Some do
+  use other
+  
+  def sddsa do
+  end
+
 end
 {% endraw %}
 {% endhighlight %}

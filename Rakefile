@@ -50,8 +50,6 @@ task :develop => :build do
   printHeader "Development server started at http://localhost:4000/"
   printHeader "Opening firefox editor..."
 
-  ##
-  %x[google-chrome-stable http://localhost:4000/]
   
   printHeader "Development mode entered."
   thread.join()
@@ -100,7 +98,6 @@ task :tags => :tag_cloud do
 
   options = Jekyll.configuration({})
   site = Jekyll::Site.new(options)
-  site.read_posts('')
 
   FileUtils.rm_rf("tag")
 
@@ -135,7 +132,6 @@ task :tag_cloud do
 
   options = Jekyll.configuration({})
   site = Jekyll::Site.new(options)
-  site.read_posts('')
 
   html = "<ul class=\"tag-cloud\">\n"
   max_count = site.tags.map{|t,p| p.count}.max
