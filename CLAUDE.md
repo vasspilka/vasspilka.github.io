@@ -1,0 +1,168 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+This is a Jekyll-based personal blog and portfolio site (vasspilka.github.io) using Ruby 2.6.3 and hosted on GitHub Pages.
+
+## Build System
+
+The project uses Rake for task automation and Jekyll for static site generation.
+
+### Common Commands
+
+**Development server with auto-regeneration:**
+```bash
+rake develop
+```
+This builds the site, starts a WEBrick server on `http://localhost:4000/`, and watches for file changes.
+
+**Build site:**
+```bash
+rake build
+```
+Compiles the Jekyll site and generates tag pages.
+
+**Clean build directory:**
+```bash
+rake clean
+```
+
+**Create new blog post:**
+```bash
+rake new
+```
+Creates a new post file in `_posts/` with the current date and prompts for title.
+
+**Generate tag pages and tag cloud:**
+```bash
+rake tags
+```
+
+**Install dependencies:**
+```bash
+bundle install
+```
+
+## Architecture
+
+### Content Structure
+- `_posts/` - Blog posts in Markdown format (YYYY-MM-DD-title.markdown)
+- `_drafts/` - Draft posts not yet published
+- `_layouts/` - HTML templates (default, post, page, tag)
+- `_includes/` - Reusable HTML components (header, footer, analytics, disqus, etc.)
+- `_plugins/` - Jekyll plugins (legacy `rdiscount` require present; Markdown engine is Kramdown)
+
+### Styling
+- Uses Bourbon (Sass mixins) and Neat (grid framework)
+- SCSS files in `assets/_sass/`
+- Main stylesheet: `assets/css/main.scss`
+
+### Dynamic Features
+- Tag system: Rake task auto-generates tag pages and tag cloud
+- Disqus comments integration
+- Google Analytics
+- Typed.js animations
+
+### Presentation Slides
+Three presentation directories (`elixir-a-first-look/`, `intro-to-elixir/`, `introducing-elixir/`) contain standalone HTML slide decks built with the Shower framework. These have their own build systems using Grunt and npm.
+
+## Post Metadata
+
+Blog posts require YAML front matter:
+```yaml
+---
+title: "Post Title"
+layout: post
+tags: [tag1, tag2]
+---
+```
+
+Optional fields:
+- `date`: "YYYY-MM-DD" to override file date
+- `published`: true|false (default true)
+- `summary`: short one-paragraph teaser
+- `image`: path to a lead image (e.g., `/assets/img/post-slug/cover.png`)
+
+## Tech Writing for Coding Agents
+
+### Goals
+- Produce clear, skimmable technical posts and docs consistent with this site's style.
+- Use first-person singular voice to match existing posts, unless writing reference docs.
+
+### Structure a Post
+- Start with a one-paragraph intro stating the problem and outcome.
+- Use `##` section headings and `###` subheadings to break up content.
+- Prefer short paragraphs (1–4 lines) and focused bullet lists.
+- End with a brief summary or next steps.
+
+### Front Matter (required/optional)
+```yaml
+---
+layout: post
+title: "Concise, descriptive title"
+tags: [topic, technology]
+summary: "One or two sentences people will see in teasers."
+image: /assets/img/post-slug/cover.png
+published: true
+---
+```
+
+### Tagging Conventions
+- Prefer lowercase, kebab-case tags (e.g., `text-editor`, `blogging`).
+- Reuse existing tags when possible; keep proper-noun capitalization if already used.
+- Keep tags concise (1–3 per post).
+
+### Code Blocks and Snippets
+- Default to fenced code blocks with language: ```ruby, ```elixir, ```bash, ```javascript.
+- Use inline code for short identifiers, commands, and filenames.
+- When showing Liquid/Jekyll code inside examples, wrap with raw to prevent evaluation:
+
+```markdown
+{% raw %}
+{% highlight ruby %}
+desc 'Generate tags pages'
+task :tags do
+  # ...
+end
+{% endhighlight %}
+{% endraw %}
+```
+
+or with fences:
+
+```markdown
+{% raw %}
+```ruby
+puts "Hello from Liquid-aware example"
+```
+{% endraw %}
+```
+
+### Images and Links
+- Store images under `/assets/img/<post-slug>/...` and reference with absolute paths starting with `/`.
+- Always include meaningful `alt` text.
+- Use descriptive Markdown links; avoid bare URLs.
+
+### Creating or Editing Posts
+1. Create a draft: `rake new` (fills `_posts/` with today’s date; move to `_drafts/` if needed).
+2. Add front matter and content following the guidelines above.
+3. Preview locally: `rake develop` then visit `http://localhost:4000/`.
+4. Generate/refresh tag pages: `rake tags`.
+5. Build once to ensure no errors: `rake build`.
+6. Commit and push to publish on GitHub Pages.
+
+### Publish Checklist
+- Title is concise; front matter includes `layout`, `title`, and `tags`.
+- Spelling/grammar pass; paragraphs are short and scannable.
+- Code blocks render with syntax highlighting; Liquid examples are wrapped in raw.
+- Images load, paths are absolute, `alt` text present.
+- Tags match existing conventions; `rake tags` has been run.
+- Local preview looks correct on desktop and mobile widths.
+
+## Important Notes
+
+- The Gemfile dynamically fetches GitHub Pages gem versions from `https://pages.github.com/versions.json`
+- Tag pages are auto-generated by Rake tasks, not manually created
+- The site uses Kramdown for Markdown rendering (see `_config.yml`). `_plugins/ext.rb` includes a legacy `rdiscount` require that is not used by GitHub Pages.
