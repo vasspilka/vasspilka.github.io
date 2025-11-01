@@ -4,32 +4,36 @@ title: "The IESIE Development Framework: Making Startup Chaos Manageable"
 date: "2025-09-27 20:43:21 +0200"
 ---
 
-If you've ever worked in a startup, you know the drill: new ideas flying around constantly, priorities shifting like sand, and everyone scrambling to build features that might completely change next week. After years of navigating this beautiful chaos, I've noticed something interesting—it's rarely the actual building that slows us down. It's the fuzzy space between "hey, what if we..." and "here's exactly what we need to build."
+If you've ever worked in a startup, you know the drill: new ideas flying around constantly, priorities shifting like sand, and a lot of scrambling to build features that might have different requirements next week. After years of navigating this beautiful chaos, I've noticed something interesting, it's rarely the actual building that slows us down. It's the uncertain space between "hey, what if we..." and "now we know exactly what needs to be build."
 
 ## The Real Problem with Moving Fast
 
-Most startups I've worked with share a common pattern: they leap straight from a brilliant idea to writing code, skipping the crucial steps of careful planning and coordination. The result? Developers spend days building something, only to hear "that's not quite what we meant" right before they are about to ship. It's not that requirements changed because of new business insights, but rather nobody really understood what they were building in the first place.
+A common theme in startups is that they leap straight from a brilliant ideas to writing code, this can be very rewarding when the idea is clear in the coders head. Unfortunately the reality is that it's hard to form clear ideas, and it get's much harder when we have to communicate them to someone else. When startups skip the steps of careful planning and coordination the result is often that developers spend days or event weeks building something, only to hear "that's not quite what we need" moments from the deadline. It's not that requirements changed because of new business insights, but rather nobody really understood what we were building in the first place.
 
-This problem became crystal clear at my current startup, Teacherspace. With AI coding assistants now able to generate entire features in minutes, our old excuse of "development takes time" vanished. Suddenly, the real bottleneck was exposed: we weren't exactly sure of what needed to be built before we started building it.
+This becomes more obvious with AI coding assistants now able to generate entire features in minutes, with clear goals and alignment one can do a weeks work in a day. Our old excuse of "development takes time" is slowly vanishing. And it's becoming obvious that the real bottleneck was always understading and communicating what needed to be built.
 
 ## IESIE: A Framework for AI-Driven Development
 
-After a rushed week of development we found out that a feature we just shipped did not quite hit the mark. The designs did not include some of the requirements and the final implementation was not quite what we wanted. There I realized something needed to change so after some brainstorming I developed what I call the IESIE Development Framework (pronounced like "easy"—because that's what development should feel like). It's designed to guide small product iterations—what we call Projects—from that initial spark of an idea all the way through to measuring their impact in production.
+It all started some time ago after a rushed week of development we had another of these "damn, this should be different" moments. And it felt like that was one too many, the straw that broke the camels back, something had to change. It's not that situations like that are extremely time-consuming (even though they can be), but it's the energy they drain. A two hour fix, can leave you sour for the rest of the day, because you know that it would be 0 hours if only it got mentioned a couple of days back.
+
+As software developers we learn to expect and manage these type of situations so that they don't affect us as much, but the hard truth is that they are quite inefficient and very often unnessesary. To solve this let's present, the IESIE Development Framework (pronounced like "easy" because that's what building products should feel like). It's a method for fast moving teams to effectively make medium to large product iterations from an initial spark of an idea all the way through to measuring it's impact in production.
 
 IESIE breaks down into five progressive stages, each building on the last:
 
-### 1. Ideation: Where Everything Starts
+### 1. Ideation: A problem in need of a solution
 
-This is the fun, messy beginning where someone on the team says, "What if we could..." Usually it's just one or two people with a spark of an idea. At this stage, things are rough and uncertain—and that's perfectly fine. 
+You face a problem
+
+This is the fun, messy beginning where someone on the team says, "What if we could..." Usually it's just one or two people with a spark of an idea. At this stage, things are rough and uncertain—and that's perfectly fine.
 
 The goal here isn't to have all the answers but to capture the essence of the idea clearly. We document three key things:
 - **The problem**: What pain point are we addressing?
-- **The rough solution**: How might we solve this? (emphasis on "might")
-- **Why now**: What makes this the right time to tackle this?
-
-The output? A simple one-pager that communicates the idea clearly enough that others can understand and engage with it. Nothing fancy—just enough to move forward.
+- **When**: What makes this the right time to tackle this?
+- **Proposed solution**: How to approch the solution?
 
 ### 2. Exploration: Reality Check Time
+
+Now that everyone can clearly see the
 
 This is where the magic happens. The broader team comes together to poke holes in the idea (constructively, of course). Each perspective adds crucial context:
 
@@ -45,12 +49,14 @@ By the end of exploration, we've either validated the concept with enough confid
 
 ### 3. Specification: Getting Crystal Clear
 
+A validated idea with a clear way to how it should be solved.
+
 This is where we transform a validated idea into a detailed description we want to build. This can include designs, product specification, technical documents, and specific tasks that need to be done.
 
 For best results the whole team needs to work together:
 - **Business** helps define key success metrics and goals
 - **Product** writes detailed requirements with clear acceptance criteria
-- **Design** creates comprehensive designs in Figma 
+- **Design** creates comprehensive designs in Figma
 - **Engineering** produces a technical design document outlining the solution approach
 - **Project lead** breaks everything down into manageable tasks and tickets
 
@@ -58,7 +64,7 @@ This step has become increasingly important as AI tools change how we work. When
 
 Well-written specs also serve a simpler purpose: they keep everyone aligned and give us something concrete to validate against. No more "I thought we agreed on X" conversations.
 
-The level of detail needed varies by project, but generally, these questions should have clear answers: 
+The level of detail needed varies by project, but generally, these questions should have clear answers:
 * Why are we doing this? (the business value)
 * What exactly are we building? (the scope)
 * What will it impact? (dependencies and side effects)
@@ -66,7 +72,7 @@ The level of detail needed varies by project, but generally, these questions sho
 * How does it look? (user interface)
 * How do we measure success? (metrics and KPIs)
 
-The whole team then aligns on the deliverables—documents, designs, tasks. This doesn't mean every detail is set in stone. Even with careful planning, unexpected situations will arise. What it does mean is that we've minimized the risk of building the wrong thing due to miscommunication. 
+The whole team then aligns on the deliverables—documents, designs, tasks. This doesn't mean every detail is set in stone. Even with careful planning, unexpected situations will arise. What it does mean is that we've minimized the risk of building the wrong thing due to miscommunication.
 
 When those unexpected details surface during implementation, we update the specification. Think of it as living documentation that evolves with your product—a reference for how everything actually works.
 
@@ -75,6 +81,8 @@ An equally important part is breaking down the work into specific tasks. By the 
 Not every project needs every deliverable. A small technical improvement might just need an engineering doc and some tasks. A new user-facing feature probably needs the full treatment. Use your judgment, but err on the side of over-communication.
 
 ### 4. Implementation: Where the Magic Happens
+
+The time to make the plan a reality
 
 This is the part everyone thinks of as "the real work"—writing code, configuring systems, and bringing the idea to life. But if you've done the previous steps right, implementation becomes surprisingly smooth.
 
@@ -108,13 +116,13 @@ Most importantly, IESIE is designed for our new reality where AI assistants can 
 
 ## The Beautiful Cycle
 
-What makes IESIE particularly powerful is its cyclical nature. The evaluation stage doesn't just close out a project—it sparks new ideas. You discover that users are trying to use your feature in unexpected ways, or that solving one problem revealed three more interesting ones. These insights flow right back into ideation, and the cycle begins again.
+What makes IESIE particularly powerful is its cyclical nature. The evaluation stage doesn't just close out a project, it opens up the space so one can see new problems to be solved. You discover that users are trying to use your feature in unexpected ways, or that solving one problem revealed three more interesting ones. These insights flow right back into ideation, and the cycle begins again.
 
-This creates a sustainable rhythm for innovation. Instead of the exhausting sprint-crash-sprint pattern many startups fall into, you get a steady flow of well-thought-out improvements, each building on the lessons of the last.
+This creates a sustainable rhythm for innovation. Where each solution gives space to look again into our system and if it's solving the problems it should.
 
 ## Does It Actually Work?
 
-At Teacherspace, we've been using IESIE for our last several projects, and it's been helpful. We've reduced those energy-draining moments where a completed feature needs to be rebuilt because of miscommunication. Our developers are happier because they're not constantly dealing with shifting requirements. Our product team is more confident because they can see ideas properly validated before committing resources.
+At Teacherspace, we've started using IESIE for some projects, and it's been helpful. It streamlined the communication process, making it easier to evaluate ideas and validate them before committing resources. Our developers are happier because they're not constantly dealing with shifting requirements. Our product team is more confident because they can see ideas properly validated before committing resources.
 
 Are we perfect at it? Not even close. We're still figuring out how to make evaluation more systematic, and sometimes we catch ourselves trying to skip steps when we're excited about an idea. But that's the beauty of a framework—it gives you something to improve against.
 
@@ -124,11 +132,10 @@ IESIE has helped us at Teacherspace, but I'm under no illusion that it's the per
 
 If you do want to give it a try, here's what worked for us:
 1. **Start small**: Pick a low-risk project for your first run
-2. **Adapt freely**: Skip steps that don't make sense, add ones that do
-3. **Give it time**: It took us 2-3 projects before it felt natural
-4. **Share what you learn**: The framework gets better when teams share their experiences
+2. **Give it time**: It took us 2-3 projects before it felt natural
+3. **Share what you learn**: The framework gets better when teams share their experiences
 
-I'd love to hear your thoughts. Does this resonate with challenges you're facing? Have you tried something similar? What's worked (or hasn't) for your team when managing the chaos of startup development?
+I'd love to hear your thoughts. Does this method resonate with challenges you're facing? Have you tried something similar? What's worked (or hasn't) for your team when managing the chaos of startup development?
 
 Maybe your team has already solved these problems in a completely different way—if so, I'd be curious to learn about it. After all, the best frameworks are the ones that evolve through real-world use and feedback from teams in the trenches.
 
